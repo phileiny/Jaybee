@@ -1,0 +1,19 @@
+defaults: &defaults
+  LOGO_MINI: <b>捷</b>比
+  LOGO_LG: <b>Jay</b>Bee
+  FOOTER_COPYRIGHT: <strong>Copyright © 2016 <a href="#">原始碼</a> . All rights reserved.</strong>
+  FOOTER_RIGHT: Anything you want
+#  email: dev@example.com
+#  secret: foo123
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+#  email: test@example.com
+
+production:
+  <<: *defaults
+  RAILS_DATABASE_PASSWORD: ubuntu@Pass
+  SECRET_KEY_BASE: c98dd636476ead2e90c22bd9619e765486d964d339686abfedadbacbbcaf7836c47488af3a4264fbe83d5bc9a91cfce29bb26531a2cb5415ec42c5535c1fd032

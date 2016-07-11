@@ -1,0 +1,29 @@
+{:uriI"µfile://app/assets/javascripts/ckeditor/plugins/leaflet/scripts/Leaflet-MiniMap/package.json?type=application/json&id=16b797c36aab5bc77176f8c36eaa627112226ef927a3e6af34573f5fb0c6935b:ET:load_pathI"app/assets/javascripts;T:filenameI"Yapp/assets/javascripts/ckeditor/plugins/leaflet/scripts/Leaflet-MiniMap/package.json;T:	nameI"=ckeditor/plugins/leaflet/scripts/Leaflet-MiniMap/package;T:logical_pathI"Bckeditor/plugins/leaflet/scripts/Leaflet-MiniMap/package.json;T:content_typeI"application/json;T:sourceI">{
+	"name": "leaflet-minimap",
+	"version": "1.0.0",
+	"author": "Norkart AS",
+	"description": "A plugin for Leaflet that provides a minimap in the corner of the map view.",
+	"license": "BSD-2-Clause",
+	"readmeFilename": "README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Norkart/Leaflet-MiniMap.git"
+	},
+	"homepage": "https://github.com/Norkart/Leaflet-MiniMap",
+	"bugs": {
+		"url": "https://github.com/Norkart/Leaflet-MiniMap/issues"
+	},
+	"dependencies": {
+		"leaflet": ">=0.5.0"
+	},
+	"keywords": [
+		"maps",
+		"leaflet",
+		"client",
+		"minimap"
+	]
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"gfile-digest://app/assets/javascripts/ckeditor/plugins/leaflet/scripts/Leaflet-MiniMap/package.json;TTF:charsetI"
+utf-8;F:digest"%>‚úpÁˆ¸4XWÔ©¬‡ŠoòÄŒmtæ@ð”3+:lengthi>:dependencies_digest"%ê¬ëÛpþ8±Iœ!N¦'°Z²kvk“•ÞÛ8LBÛ:idI"E16b797c36aab5bc77176f8c36eaa627112226ef927a3e6af34573f5fb0c6935b;F:
+mtimel+¡½V

@@ -1,0 +1,15 @@
+I"N(function() {
+  $(document).ready(function() {
+    $(window).bind('rails:flash', function(e, params) {
+      PNotify.prototype.options.styling = "jqueryui";
+      new PNotify({
+        title: params.type,
+        text: params.message,
+        type: params.type,
+        addclass: "stack-modal"
+      });
+    });
+  });
+
+}).call(this);
+:ET
