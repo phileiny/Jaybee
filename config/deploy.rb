@@ -2,9 +2,9 @@
 lock '3.5.0'
 
 set :application, 'jaybee'
-set :repo_url, 'git@github.com:sourcecor/jaybee.git' # 修改這裡，以符合你自己放程式的地方
+set :repo_url, 'git@github.com:phileiny/Jaybee.git' # 修改這裡，以符合你自己放程式的地方
 set :branch, :master
-set :deploy_to, '/home/ubuntu/jaybee'
+set :deploy_to, '/home/ubuntu/Jaybee'
 set :pty, true
 set :linked_files, %w{config/database.yml config/application.yml config/secrets.yml}
 # set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
