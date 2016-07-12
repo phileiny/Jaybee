@@ -6,8 +6,9 @@ set :repo_url, 'git@github.com:phileiny/Jaybee.git' # 修改這裡，以符合�
 set :branch, :master
 set :deploy_to, '/home/ubuntu/Jaybee'
 set :pty, true
-set :linked_files, %w{config/database.yml config/application.yml config/secrets.yml}
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
+#set :linked_files, %w{config/database.yml config/application.yml config/secrets.yml}
+set :linked_files, %w{config/database.yml config/application.yml}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 set :linked_dirs, fetch(:linked_dirs, []).push('public/assets', 'public/uploads')
 set :linked_dirs, fetch(:linked_dirs, []).push("bin", "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system")
 set :keep_releases, 5
@@ -64,33 +65,33 @@ set :puma_preload_app, false
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
-#namespace :deploy do
-#  namespace :bower do
-#    desc 'Install bower'
-#    task :install do
-#      on roles(:web) do
-#        within release_path do
-#          with rails_env: fetch(:rails_env) do
-#            execute :rake, 'bower:install CI=true'
+namespace :deploy do
+  namespace :bower do
+    desc 'Install bower'
+    task :install do
+      on roles(:web) do
+        within release_path do
+          with rails_env: fetch(:rails_env) do
+            execute :rake, 'bower:install CI=true'
 
-#            execute :rake, 'bower:resolve'
+            execute :rake, 'bower:resolve'
             # execute :rake, 'assets:precompile'
             # RAILS_ENV=production rake bower:install CI=true
             # RAILS_ENV=production rake bower:resolve
-#          end
-#        end
-#      end
-#    end
-#  end
-#  before 'deploy:compile_assets', 'bower:install'
+          end
+        end
+      end
+    end
+  end
+  before 'deploy:compile_assets', 'bower:install'
 
- # after :restart, :clear_cache do
- #   on roles(:web), in: :groups, limit: 3, wait: 10 do
+  after :restart, :clear_cache do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
       # Here we can do anything such as:
- #    within release_path do
- #       execute :rake, 'cache:clear'
- #     end
- #   end
- # end
+     within release_path do
+        execute :rake, 'cache:clear'
+      end
+    end
+  end
 
-end
+ end
