@@ -536,3 +536,1401 @@
  DEBUG [4397a0bb] 	
  DEBUG [4397a0bb] 	(See full trace by running task with --trace)
  DEBUG [4397a0bb] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-12 11:53:11 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [5f96ef9b] Running ~/.rvm/bin/rvm version as ubuntu@52.197.20.14
+ DEBUG [5f96ef9b] Command: ~/.rvm/bin/rvm version
+ DEBUG [5f96ef9b] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [5f96ef9b] 	
+ DEBUG [5f96ef9b] Finished in 1.644 seconds with exit status 0 (successful).
+ DEBUG [a5056241] Running ~/.rvm/bin/rvm current as ubuntu@52.197.20.14
+ DEBUG [a5056241] Command: ~/.rvm/bin/rvm current
+ DEBUG [a5056241] 	ruby-2.3.1@rails426
+ DEBUG [a5056241] 	
+ DEBUG [a5056241] Finished in 1.148 seconds with exit status 0 (successful).
+ DEBUG [2d492c51] Running ~/.rvm/bin/rvm ruby-2.3.1 do ruby --version as ubuntu@52.197.20.14
+ DEBUG [2d492c51] Command: ~/.rvm/bin/rvm ruby-2.3.1 do ruby --version
+ DEBUG [2d492c51] 	ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
+ DEBUG [2d492c51] 	
+ DEBUG [2d492c51] Finished in 0.373 seconds with exit status 0 (successful).
+  INFO [f08415e1] Running /usr/bin/env mkdir -p /tmp/jaybee/ as ubuntu@52.197.20.14
+ DEBUG [f08415e1] Command: /usr/bin/env mkdir -p /tmp/jaybee/
+  INFO [f08415e1] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/jaybee/git-ssh.sh 0.0%
+  INFO Uploading /tmp/jaybee/git-ssh.sh 100.0%
+  INFO [0eaa713c] Running /usr/bin/env chmod +rx /tmp/jaybee/git-ssh.sh as ubuntu@52.197.20.14
+ DEBUG [0eaa713c] Command: /usr/bin/env chmod +rx /tmp/jaybee/git-ssh.sh
+  INFO [0eaa713c] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [9419195e] Running /usr/bin/env git ls-remote --heads git@github.com:phileiny/Jaybee.git as ubuntu@52.197.20.14
+ DEBUG [9419195e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:phileiny/Jaybee.git )
+ DEBUG [9419195e] 	dc30c3674277ca7aeafafc530d7ce158b7735b60
+ DEBUG [9419195e] 		
+ DEBUG [9419195e] 	refs/heads/master
+ DEBUG [9419195e] 	
+  INFO [9419195e] Finished in 2.627 seconds with exit status 0 (successful).
+  INFO [c57bb66d] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared /home/ubuntu/Jaybee/releases as ubuntu@52.197.20.14
+ DEBUG [c57bb66d] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared /home/ubuntu/Jaybee/releases
+  INFO [c57bb66d] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [747ae57f] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/shared/public/assets as ubuntu@52.197.20.14
+ DEBUG [747ae57f] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/shared/public/assets
+  INFO [747ae57f] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [baa925dd] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/config as ubuntu@52.197.20.14
+ DEBUG [baa925dd] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/config
+  INFO [baa925dd] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [27c6dfbb] Running [ -f /home/ubuntu/Jaybee/shared/config/database.yml ] as ubuntu@52.197.20.14
+ DEBUG [27c6dfbb] Command: [ -f /home/ubuntu/Jaybee/shared/config/database.yml ]
+ DEBUG [27c6dfbb] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [57b78c4b] Running [ -f /home/ubuntu/Jaybee/shared/config/application.yml ] as ubuntu@52.197.20.14
+ DEBUG [57b78c4b] Command: [ -f /home/ubuntu/Jaybee/shared/config/application.yml ]
+ DEBUG [57b78c4b] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [77039f59] Running [ -f /home/ubuntu/Jaybee/shared/puma.rb ] as ubuntu@52.197.20.14
+ DEBUG [77039f59] Command: [ -f /home/ubuntu/Jaybee/shared/puma.rb ]
+ DEBUG [77039f59] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [6156682c] Running [ -f /home/ubuntu/Jaybee/current/REVISION ] as ubuntu@52.197.20.14
+ DEBUG [6156682c] Command: [ -f /home/ubuntu/Jaybee/current/REVISION ]
+ DEBUG [6156682c] Finished in 0.136 seconds with exit status 1 (failed).
+ DEBUG [702a0a74] Running [ -f /home/ubuntu/Jaybee/repo/HEAD ] as ubuntu@52.197.20.14
+ DEBUG [702a0a74] Command: [ -f /home/ubuntu/Jaybee/repo/HEAD ]
+ DEBUG [702a0a74] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/Jaybee/repo
+ DEBUG [aa9b26b1] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [aa9b26b1] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [aa9b26b1] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [139c3f47] Running /usr/bin/env git remote update --prune as ubuntu@52.197.20.14
+ DEBUG [139c3f47] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [139c3f47] 	Fetching origin
+ DEBUG [139c3f47] 	
+ DEBUG [139c3f47] 	remote: Counting objects: 15, done.[K
+ DEBUG [139c3f47] 	
+ DEBUG [139c3f47] 	remote: Compressing objects:  14% (1/7)   [K
+ DEBUG [139c3f47] 	remote: Compressing objects:  28% (2/7)   [K
+ DEBUG [139c3f47] 	remote: Compressing objects:  42% (3/7)   [K
+ DEBUG [139c3f47] 	remote: Compressing objects:  57% (4/7)   [K
+ DEBUG [139c3f47] 	remote: Compressing objects:  71% (5/7)   [K
+ DEBUG [139c3f47] 	remote: Compressing objects:  85% (6/7)   [K
+ DEBUG [139c3f47] 	remote: Compressing objects: 100% (7/7)   [K
+ DEBUG [139c3f47] 	remote: Compressing objects: 100% (7/7), done.[K
+ DEBUG [139c3f47] 	
+ DEBUG [139c3f47] 	remote: Total 15 (delta 11), reused 12 (delta 8), pack-reused 0[K
+ DEBUG [139c3f47] 	
+ DEBUG [139c3f47] 	Unpacking objects:   6% (1/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  13% (2/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  20% (3/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  26% (4/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  33% (5/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  40% (6/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  46% (7/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  53% (8/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  60% (9/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  66% (10/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  73% (11/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  80% (12/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  86% (13/15)   
+ DEBUG [139c3f47] 	Unpacking objects:  93% (14/15)   
+ DEBUG [139c3f47] 	Unpacking objects: 100% (15/15)   
+ DEBUG [139c3f47] 	Unpacking objects: 100% (15/15), done.
+ DEBUG [139c3f47] 	
+ DEBUG [139c3f47] 	From github.com:phileiny/Jaybee
+ DEBUG [139c3f47] 	
+ DEBUG [139c3f47] 	   f55ea46..dc30c36  master     -> master
+ DEBUG [139c3f47] 	
+  INFO [139c3f47] Finished in 3.027 seconds with exit status 0 (successful).
+ DEBUG [0bbe5f76] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [0bbe5f76] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [0bbe5f76] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [4b0f2ffa] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712035319 as ubuntu@52.197.20.14
+ DEBUG [4b0f2ffa] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712035319 )
+  INFO [4b0f2ffa] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [c8b9529d] Running /usr/bin/env git archive master | tar -x -f - -C /home/ubuntu/Jaybee/releases/20160712035319 as ubuntu@52.197.20.14
+ DEBUG [c8b9529d] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/ubuntu/Jaybee/releases/20160712035319 )
+  INFO [c8b9529d] Finished in 0.779 seconds with exit status 0 (successful).
+ DEBUG [a6ca1436] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [a6ca1436] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [a6ca1436] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [81cfc34c] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@52.197.20.14
+ DEBUG [81cfc34c] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [81cfc34c] 	dc30c3674277ca7aeafafc530d7ce158b7735b60
+ DEBUG [81cfc34c] 	
+ DEBUG [81cfc34c] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [e4fefd00] Running if test ! -d /home/ubuntu/Jaybee/releases/20160712035319; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712035319'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [e4fefd00] Command: if test ! -d /home/ubuntu/Jaybee/releases/20160712035319; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712035319'" 1>&2; false; fi
+ DEBUG [e4fefd00] Finished in 0.136 seconds with exit status 0 (successful).
+  INFO [0e09733a] Running /usr/bin/env echo "dc30c3674277ca7aeafafc530d7ce158b7735b60" >> REVISION as ubuntu@52.197.20.14
+ DEBUG [0e09733a] Command: cd /home/ubuntu/Jaybee/releases/20160712035319 && /usr/bin/env echo "dc30c3674277ca7aeafafc530d7ce158b7735b60" >> REVISION
+  INFO [0e09733a] Finished in 0.142 seconds with exit status 0 (successful).
+  INFO [9c31a966] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712035319/config as ubuntu@52.197.20.14
+ DEBUG [9c31a966] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712035319/config
+  INFO [9c31a966] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [2c261995] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/config/database.yml ] as ubuntu@52.197.20.14
+ DEBUG [2c261995] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/config/database.yml ]
+ DEBUG [2c261995] Finished in 0.137 seconds with exit status 1 (failed).
+ DEBUG [462bc6ce] Running [ -f /home/ubuntu/Jaybee/releases/20160712035319/config/database.yml ] as ubuntu@52.197.20.14
+ DEBUG [462bc6ce] Command: [ -f /home/ubuntu/Jaybee/releases/20160712035319/config/database.yml ]
+ DEBUG [462bc6ce] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [4a3f13d1] Running /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712035319/config/database.yml as ubuntu@52.197.20.14
+ DEBUG [4a3f13d1] Command: /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712035319/config/database.yml
+  INFO [4a3f13d1] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [94d24a0a] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/database.yml /home/ubuntu/Jaybee/releases/20160712035319/config/database.yml as ubuntu@52.197.20.14
+ DEBUG [94d24a0a] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/database.yml /home/ubuntu/Jaybee/releases/20160712035319/config/database.yml
+  INFO [94d24a0a] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [0a9ef7f6] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/config/application.yml ] as ubuntu@52.197.20.14
+ DEBUG [0a9ef7f6] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/config/application.yml ]
+ DEBUG [0a9ef7f6] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [61935176] Running [ -f /home/ubuntu/Jaybee/releases/20160712035319/config/application.yml ] as ubuntu@52.197.20.14
+ DEBUG [61935176] Command: [ -f /home/ubuntu/Jaybee/releases/20160712035319/config/application.yml ]
+ DEBUG [61935176] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [a4cf99e8] Running /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712035319/config/application.yml as ubuntu@52.197.20.14
+ DEBUG [a4cf99e8] Command: /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712035319/config/application.yml
+  INFO [a4cf99e8] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [ce8f5c0e] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/application.yml /home/ubuntu/Jaybee/releases/20160712035319/config/application.yml as ubuntu@52.197.20.14
+ DEBUG [ce8f5c0e] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/application.yml /home/ubuntu/Jaybee/releases/20160712035319/config/application.yml
+  INFO [ce8f5c0e] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [0417eea6] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712035319 /home/ubuntu/Jaybee/releases/20160712035319/tmp /home/ubuntu/Jaybee/releases/20160712035319/vendor /home/ubuntu/Jaybee/releases/20160712035319/public as ubuntu@52.197.20.14
+ DEBUG [0417eea6] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712035319 /home/ubuntu/Jaybee/releases/20160712035319/tmp /home/ubuntu/Jaybee/releases/20160712035319/vendor /home/ubuntu/Jaybee/releases/20160712035319/public
+  INFO [0417eea6] Finished in 0.139 seconds with exit status 0 (successful).
+ DEBUG [628022e8] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/bin ] as ubuntu@52.197.20.14
+ DEBUG [628022e8] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/bin ]
+ DEBUG [628022e8] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [5b0280fa] Running [ -d /home/ubuntu/Jaybee/releases/20160712035319/bin ] as ubuntu@52.197.20.14
+ DEBUG [5b0280fa] Command: [ -d /home/ubuntu/Jaybee/releases/20160712035319/bin ]
+ DEBUG [5b0280fa] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [80aa834a] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712035319/bin as ubuntu@52.197.20.14
+ DEBUG [80aa834a] Command: /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712035319/bin
+  INFO [80aa834a] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [2e46db95] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/releases/20160712035319/bin as ubuntu@52.197.20.14
+ DEBUG [2e46db95] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/releases/20160712035319/bin
+  INFO [2e46db95] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [6b6d2ae9] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/log ] as ubuntu@52.197.20.14
+ DEBUG [6b6d2ae9] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/log ]
+ DEBUG [6b6d2ae9] Finished in 0.137 seconds with exit status 1 (failed).
+ DEBUG [1000b658] Running [ -d /home/ubuntu/Jaybee/releases/20160712035319/log ] as ubuntu@52.197.20.14
+ DEBUG [1000b658] Command: [ -d /home/ubuntu/Jaybee/releases/20160712035319/log ]
+ DEBUG [1000b658] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [37b4f6d0] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712035319/log as ubuntu@52.197.20.14
+ DEBUG [37b4f6d0] Command: /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712035319/log
+  INFO [37b4f6d0] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [34591553] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/releases/20160712035319/log as ubuntu@52.197.20.14
+ DEBUG [34591553] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/releases/20160712035319/log
+  INFO [34591553] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [89b72bc5] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/tmp/pids ] as ubuntu@52.197.20.14
+ DEBUG [89b72bc5] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/tmp/pids ]
+ DEBUG [89b72bc5] Finished in 0.137 seconds with exit status 1 (failed).
+ DEBUG [a9428512] Running [ -d /home/ubuntu/Jaybee/releases/20160712035319/tmp/pids ] as ubuntu@52.197.20.14
+ DEBUG [a9428512] Command: [ -d /home/ubuntu/Jaybee/releases/20160712035319/tmp/pids ]
+ DEBUG [a9428512] Finished in 0.137 seconds with exit status 1 (failed).
+  INFO [6ab344a1] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/releases/20160712035319/tmp/pids as ubuntu@52.197.20.14
+ DEBUG [6ab344a1] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/releases/20160712035319/tmp/pids
+  INFO [6ab344a1] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [0ea94818] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/tmp/cache ] as ubuntu@52.197.20.14
+ DEBUG [0ea94818] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/tmp/cache ]
+ DEBUG [0ea94818] Finished in 0.137 seconds with exit status 1 (failed).
+ DEBUG [b2469c77] Running [ -d /home/ubuntu/Jaybee/releases/20160712035319/tmp/cache ] as ubuntu@52.197.20.14
+ DEBUG [b2469c77] Command: [ -d /home/ubuntu/Jaybee/releases/20160712035319/tmp/cache ]
+ DEBUG [b2469c77] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [d2c8edc0] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712035319/tmp/cache as ubuntu@52.197.20.14
+ DEBUG [d2c8edc0] Command: /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712035319/tmp/cache
+  INFO [d2c8edc0] Finished in 0.230 seconds with exit status 0 (successful).
+  INFO [34df9243] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/releases/20160712035319/tmp/cache as ubuntu@52.197.20.14
+ DEBUG [34df9243] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/releases/20160712035319/tmp/cache
+  INFO [34df9243] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [bc445e4d] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/tmp/sockets ] as ubuntu@52.197.20.14
+ DEBUG [bc445e4d] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/tmp/sockets ]
+ DEBUG [bc445e4d] Finished in 0.137 seconds with exit status 1 (failed).
+ DEBUG [690321df] Running [ -d /home/ubuntu/Jaybee/releases/20160712035319/tmp/sockets ] as ubuntu@52.197.20.14
+ DEBUG [690321df] Command: [ -d /home/ubuntu/Jaybee/releases/20160712035319/tmp/sockets ]
+ DEBUG [690321df] Finished in 0.139 seconds with exit status 1 (failed).
+  INFO [de358912] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/releases/20160712035319/tmp/sockets as ubuntu@52.197.20.14
+ DEBUG [de358912] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/releases/20160712035319/tmp/sockets
+  INFO [de358912] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [dc012526] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/vendor/bundle ] as ubuntu@52.197.20.14
+ DEBUG [dc012526] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/vendor/bundle ]
+ DEBUG [dc012526] Finished in 0.170 seconds with exit status 1 (failed).
+ DEBUG [18e0d8f2] Running [ -d /home/ubuntu/Jaybee/releases/20160712035319/vendor/bundle ] as ubuntu@52.197.20.14
+ DEBUG [18e0d8f2] Command: [ -d /home/ubuntu/Jaybee/releases/20160712035319/vendor/bundle ]
+ DEBUG [18e0d8f2] Finished in 0.137 seconds with exit status 1 (failed).
+  INFO [681e693b] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/releases/20160712035319/vendor/bundle as ubuntu@52.197.20.14
+ DEBUG [681e693b] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/releases/20160712035319/vendor/bundle
+  INFO [681e693b] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [205da84b] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/public/system ] as ubuntu@52.197.20.14
+ DEBUG [205da84b] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/public/system ]
+ DEBUG [205da84b] Finished in 0.137 seconds with exit status 1 (failed).
+ DEBUG [cf3d3ea4] Running [ -d /home/ubuntu/Jaybee/releases/20160712035319/public/system ] as ubuntu@52.197.20.14
+ DEBUG [cf3d3ea4] Command: [ -d /home/ubuntu/Jaybee/releases/20160712035319/public/system ]
+ DEBUG [cf3d3ea4] Finished in 0.137 seconds with exit status 1 (failed).
+  INFO [f7445d4b] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/releases/20160712035319/public/system as ubuntu@52.197.20.14
+ DEBUG [f7445d4b] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/releases/20160712035319/public/system
+  INFO [f7445d4b] Finished in 0.139 seconds with exit status 0 (successful).
+ DEBUG [4dd1681c] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/public/uploads ] as ubuntu@52.197.20.14
+ DEBUG [4dd1681c] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/public/uploads ]
+ DEBUG [4dd1681c] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [57284293] Running [ -d /home/ubuntu/Jaybee/releases/20160712035319/public/uploads ] as ubuntu@52.197.20.14
+ DEBUG [57284293] Command: [ -d /home/ubuntu/Jaybee/releases/20160712035319/public/uploads ]
+ DEBUG [57284293] Finished in 0.137 seconds with exit status 1 (failed).
+  INFO [a02a33e7] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/releases/20160712035319/public/uploads as ubuntu@52.197.20.14
+ DEBUG [a02a33e7] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/releases/20160712035319/public/uploads
+  INFO [a02a33e7] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [eae8108e] Running [ -L /home/ubuntu/Jaybee/releases/20160712035319/public/assets ] as ubuntu@52.197.20.14
+ DEBUG [eae8108e] Command: [ -L /home/ubuntu/Jaybee/releases/20160712035319/public/assets ]
+ DEBUG [eae8108e] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [435e717a] Running [ -d /home/ubuntu/Jaybee/releases/20160712035319/public/assets ] as ubuntu@52.197.20.14
+ DEBUG [435e717a] Command: [ -d /home/ubuntu/Jaybee/releases/20160712035319/public/assets ]
+ DEBUG [435e717a] Finished in 0.137 seconds with exit status 1 (failed).
+  INFO [ac8e2eed] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/assets /home/ubuntu/Jaybee/releases/20160712035319/public/assets as ubuntu@52.197.20.14
+ DEBUG [ac8e2eed] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/assets /home/ubuntu/Jaybee/releases/20160712035319/public/assets
+  INFO [ac8e2eed] Finished in 0.141 seconds with exit status 0 (successful).
+ DEBUG [93da997e] Running if test ! -d /home/ubuntu/Jaybee/releases/20160712035319; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712035319'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [93da997e] Command: if test ! -d /home/ubuntu/Jaybee/releases/20160712035319; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712035319'" 1>&2; false; fi
+ DEBUG [93da997e] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [78a04bbc] Running ~/.rvm/bin/rvm ruby-2.3.1 do bundle install --path /home/ubuntu/Jaybee/shared/bundle --without development test --deployment --quiet as ubuntu@52.197.20.14
+ DEBUG [78a04bbc] Command: cd /home/ubuntu/Jaybee/releases/20160712035319 && ~/.rvm/bin/rvm ruby-2.3.1 do bundle install --path /home/ubuntu/Jaybee/shared/bundle --without development test --deployment --quiet
+ DEBUG [78a04bbc] 	[32mRVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
+ DEBUG [78a04bbc] 	
+ DEBUG [78a04bbc] 	you can ignore these warnings with 'rvm rvmrc warning ignore /home/ubuntu/Jaybee/releases/20160712035319/Gemfile'.
+ DEBUG [78a04bbc] 	
+ DEBUG [78a04bbc] 	To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
+ DEBUG [78a04bbc] 	
+ DEBUG [78a04bbc] 	[0m
+ DEBUG [78a04bbc] 	
+ DEBUG [78a04bbc] 	/home/ubuntu/.rvm/scripts/set: line 19: exec: bundle: not found
+ DEBUG [78a04bbc] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-12 12:09:54 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2691da20] Running ~/.rvm/bin/rvm version as ubuntu@52.197.20.14
+ DEBUG [2691da20] Command: ~/.rvm/bin/rvm version
+ DEBUG [2691da20] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [2691da20] 	
+ DEBUG [2691da20] Finished in 1.313 seconds with exit status 0 (successful).
+ DEBUG [56aae835] Running ~/.rvm/bin/rvm current as ubuntu@52.197.20.14
+ DEBUG [56aae835] Command: ~/.rvm/bin/rvm current
+ DEBUG [56aae835] 	ruby-2.3.1@rails426
+ DEBUG [56aae835] 	
+ DEBUG [56aae835] Finished in 1.181 seconds with exit status 0 (successful).
+ DEBUG [c1fdb376] Running ~/.rvm/bin/rvm ruby-2.3.1 do ruby --version as ubuntu@52.197.20.14
+ DEBUG [c1fdb376] Command: ~/.rvm/bin/rvm ruby-2.3.1 do ruby --version
+ DEBUG [c1fdb376] 	ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
+ DEBUG [c1fdb376] 	
+ DEBUG [c1fdb376] Finished in 0.380 seconds with exit status 0 (successful).
+  INFO [f5118e3a] Running /usr/bin/env mkdir -p /tmp/jaybee/ as ubuntu@52.197.20.14
+ DEBUG [f5118e3a] Command: /usr/bin/env mkdir -p /tmp/jaybee/
+  INFO [f5118e3a] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/jaybee/git-ssh.sh 0.0%
+  INFO Uploading /tmp/jaybee/git-ssh.sh 100.0%
+  INFO [9fd9e8e8] Running /usr/bin/env chmod +rx /tmp/jaybee/git-ssh.sh as ubuntu@52.197.20.14
+ DEBUG [9fd9e8e8] Command: /usr/bin/env chmod +rx /tmp/jaybee/git-ssh.sh
+  INFO [9fd9e8e8] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [297debed] Running /usr/bin/env git ls-remote --heads git@github.com:phileiny/Jaybee.git as ubuntu@52.197.20.14
+ DEBUG [297debed] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:phileiny/Jaybee.git )
+ DEBUG [297debed] 	dc30c3674277ca7aeafafc530d7ce158b7735b60
+ DEBUG [297debed] 		
+ DEBUG [297debed] 	refs/heads/master
+ DEBUG [297debed] 	
+  INFO [297debed] Finished in 2.730 seconds with exit status 0 (successful).
+  INFO [e991a996] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared /home/ubuntu/Jaybee/releases as ubuntu@52.197.20.14
+ DEBUG [e991a996] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared /home/ubuntu/Jaybee/releases
+  INFO [e991a996] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [5980cb0b] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/shared/public/assets as ubuntu@52.197.20.14
+ DEBUG [5980cb0b] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/shared/public/assets
+  INFO [5980cb0b] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [7812d1f4] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/config as ubuntu@52.197.20.14
+ DEBUG [7812d1f4] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/config
+  INFO [7812d1f4] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [f593ed30] Running [ -f /home/ubuntu/Jaybee/shared/config/database.yml ] as ubuntu@52.197.20.14
+ DEBUG [f593ed30] Command: [ -f /home/ubuntu/Jaybee/shared/config/database.yml ]
+ DEBUG [f593ed30] Finished in 0.144 seconds with exit status 1 (failed).
+ ERROR linked file /home/ubuntu/Jaybee/shared/config/database.yml does not exist on 52.197.20.14
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-12 12:12:17 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b32c60e5] Running ~/.rvm/bin/rvm version as ubuntu@52.197.20.14
+ DEBUG [b32c60e5] Command: ~/.rvm/bin/rvm version
+ DEBUG [b32c60e5] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [b32c60e5] 	
+ DEBUG [b32c60e5] Finished in 1.214 seconds with exit status 0 (successful).
+ DEBUG [7da5a75b] Running ~/.rvm/bin/rvm current as ubuntu@52.197.20.14
+ DEBUG [7da5a75b] Command: ~/.rvm/bin/rvm current
+ DEBUG [7da5a75b] 	ruby-2.3.1@rails426
+ DEBUG [7da5a75b] 	
+ DEBUG [7da5a75b] Finished in 1.152 seconds with exit status 0 (successful).
+ DEBUG [b02eb979] Running ~/.rvm/bin/rvm ruby-2.3.1 do ruby --version as ubuntu@52.197.20.14
+ DEBUG [b02eb979] Command: ~/.rvm/bin/rvm ruby-2.3.1 do ruby --version
+ DEBUG [b02eb979] 	ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
+ DEBUG [b02eb979] 	
+ DEBUG [b02eb979] Finished in 0.371 seconds with exit status 0 (successful).
+  INFO [f41c1eb4] Running /usr/bin/env mkdir -p /tmp/jaybee/ as ubuntu@52.197.20.14
+ DEBUG [f41c1eb4] Command: /usr/bin/env mkdir -p /tmp/jaybee/
+  INFO [f41c1eb4] Finished in 0.139 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/jaybee/git-ssh.sh 0.0%
+  INFO Uploading /tmp/jaybee/git-ssh.sh 100.0%
+  INFO [f56b4735] Running /usr/bin/env chmod +rx /tmp/jaybee/git-ssh.sh as ubuntu@52.197.20.14
+ DEBUG [f56b4735] Command: /usr/bin/env chmod +rx /tmp/jaybee/git-ssh.sh
+  INFO [f56b4735] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [7824e736] Running /usr/bin/env git ls-remote --heads git@github.com:phileiny/Jaybee.git as ubuntu@52.197.20.14
+ DEBUG [7824e736] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:phileiny/Jaybee.git )
+ DEBUG [7824e736] 	dc30c3674277ca7aeafafc530d7ce158b7735b60
+ DEBUG [7824e736] 		
+ DEBUG [7824e736] 	refs/heads/master
+ DEBUG [7824e736] 	
+  INFO [7824e736] Finished in 2.557 seconds with exit status 0 (successful).
+  INFO [77807f00] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared /home/ubuntu/Jaybee/releases as ubuntu@52.197.20.14
+ DEBUG [77807f00] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared /home/ubuntu/Jaybee/releases
+  INFO [77807f00] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [e72822a6] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/shared/public/assets as ubuntu@52.197.20.14
+ DEBUG [e72822a6] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/shared/public/assets
+  INFO [e72822a6] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [8c61df0d] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/config as ubuntu@52.197.20.14
+ DEBUG [8c61df0d] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/config
+  INFO [8c61df0d] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [11edfebc] Running [ -f /home/ubuntu/Jaybee/shared/config/database.yml ] as ubuntu@52.197.20.14
+ DEBUG [11edfebc] Command: [ -f /home/ubuntu/Jaybee/shared/config/database.yml ]
+ DEBUG [11edfebc] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [65eea403] Running [ -f /home/ubuntu/Jaybee/shared/config/application.yml ] as ubuntu@52.197.20.14
+ DEBUG [65eea403] Command: [ -f /home/ubuntu/Jaybee/shared/config/application.yml ]
+ DEBUG [65eea403] Finished in 0.137 seconds with exit status 0 (successful).
+ DEBUG [9a0fa554] Running [ -f /home/ubuntu/Jaybee/shared/puma.rb ] as ubuntu@52.197.20.14
+ DEBUG [9a0fa554] Command: [ -f /home/ubuntu/Jaybee/shared/puma.rb ]
+ DEBUG [9a0fa554] Finished in 0.137 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /home/ubuntu/Jaybee/shared/puma.rb 0.0%
+  INFO Uploading /home/ubuntu/Jaybee/shared/puma.rb 100.0%
+  INFO puma.rb generated
+ DEBUG [a51746bd] Running [ -f /home/ubuntu/Jaybee/current/REVISION ] as ubuntu@52.197.20.14
+ DEBUG [a51746bd] Command: [ -f /home/ubuntu/Jaybee/current/REVISION ]
+ DEBUG [a51746bd] Finished in 0.139 seconds with exit status 1 (failed).
+ DEBUG [94471fca] Running [ -f /home/ubuntu/Jaybee/repo/HEAD ] as ubuntu@52.197.20.14
+ DEBUG [94471fca] Command: [ -f /home/ubuntu/Jaybee/repo/HEAD ]
+ DEBUG [94471fca] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [05ff7a63] Running if test ! -d /home/ubuntu/Jaybee; then echo "Directory does not exist '/home/ubuntu/Jaybee'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [05ff7a63] Command: if test ! -d /home/ubuntu/Jaybee; then echo "Directory does not exist '/home/ubuntu/Jaybee'" 1>&2; false; fi
+ DEBUG [05ff7a63] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [13f4b0c0] Running /usr/bin/env git clone --mirror git@github.com:phileiny/Jaybee.git /home/ubuntu/Jaybee/repo as ubuntu@52.197.20.14
+ DEBUG [13f4b0c0] Command: cd /home/ubuntu/Jaybee && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git clone --mirror git@github.com:phileiny/Jaybee.git /home/ubuntu/Jaybee/repo )
+ DEBUG [13f4b0c0] 	Cloning into bare repository '/home/ubuntu/Jaybee/repo'...
+ DEBUG [13f4b0c0] 	remote: Counting objects: 10889, done.[K
+ DEBUG [13f4b0c0] 	
+ DEBUG [13f4b0c0] 	remote: Compressing objects:   0% (1/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:   1% (79/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:   2% (157/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:   3% (235/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:   4% (313/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:   5% (391/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compress
+ DEBUG [13f4b0c0] 	ing objects:   6% (469/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:   7% (548/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:   8% (626/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:   9% (704/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  10% (782/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  11% (860/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  12% (938/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  13% (1016/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  14% (1095/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  15% (1173/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  16% (1251/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  17% (1329/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  18% (1407/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  19% (1485/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  20% (1563/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  21% (1642/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  22% (1720/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  23% (1798/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  24% (1876/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  25% (1954/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  26% (2032/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  27% (2111/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  28% (2189/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  29% (2267/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  30% (2345/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  31% (2423/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  32% (2501/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  33% (2579/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  34% (2658/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  35% (2736/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  36% (2814/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  37% (2892/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  38% (2970/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  39% (3048/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  40% (3126/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  41% (3205/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  42% (3283/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  43% (3361/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  44% (3439/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  45% (3517/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  46% (3595/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  47% (3674/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  48% (3752/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  49% (3830/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  50% (3908/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  51% (3986/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  52% (4064/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  53% (4142/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  54% (4221/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  55% (4299/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  56% (4377/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  57% (4455/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  58% (4533/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  59% (4611/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  60% (4689/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  61% (4768/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  62% (4846/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  63% (4924/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  64% (5002/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  65% (5080/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  66% (5158/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  67% (5237/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  68% (5315/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  69% (5393/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  70% (5471/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  71% (5549/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  72% (5627/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  73% (5705/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  74% (5784/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  75% (5862/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  76% (5940/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  77% (6018/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  78% (6096/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  79% (6174/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  80% (6252/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  81% (6331/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  82% (6409/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  83% (6487/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  84% (6565/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  85% (6643/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  86% (6721/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  87% (6800/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  88% (6878/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  89% (6956/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  90% (7034/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  91% (7112/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  92% (7190/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  93% (7268/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  94% (7347/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  95% (7425/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  96% (7503/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  97% (7581/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  98% (7659/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects:  99% (7737/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects: 100% (7815/7815)   [K
+ DEBUG [13f4b0c0] 	remote: Compressing objects: 100% (7815/7815), done.[K
+ DEBUG [13f4b0c0] 	
+ DEBUG [13f4b0c0] 	Receiving objects:   0% (1/10889)   
+ DEBUG [13f4b0c0] 	Receiving objects:   1% (109/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:   2% (218/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:   3% (327/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:   4% (436/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:   5% (545/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:   6% (654/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:   7% (763/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:   8% (872/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:   9% (981/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  10% (1089/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  11% (1198/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  12% (1307/10889), 164.00 KiB | 301.00 KiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  12% (1390/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  13% (1416/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  14% (1525/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  15% (1634/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  16% (1743/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  17% (1852/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  18% (1961/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  19% (2069/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  20% (2178/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  21% (2287/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  22% (2396/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  23% (2505/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  24% (2614/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  25% (2723/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  26% (2832/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  27% (2941/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  28% (3049/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  29% (3158/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  30% (3267/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  31% (3376/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  32% (3485/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  33% (3594/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  34% (3703/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  35% (3812/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  36% (3921/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  37% (4029/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  38% (4138/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  39% (4247/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  40% (4356/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  41% (4465/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  42% (4574/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  43% (4683/10889), 1.69 MiB | 1.59 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  44% (4792/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  45% (4901/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  46% (5009/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  47% (5118/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  48% (5227/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  49% (5336/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  50% (5445/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  51% (5554/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  52% (5663/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  53% (5772/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  54% (5881/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  55% (5989/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  56% (6098/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  57% (6207/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  58% (6316/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  59% (6425/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  60% (6534/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  61% (6643/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  62% (6752/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  63% (6861/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  64% (6969/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  65% (7078/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  66% (7187/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  66% (7290/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  67% (7296/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  68% (7405/10889), 4.16 MiB | 2.30 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  69% (7514/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  70% (7623/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  71% (7732/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  72% (7841/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  73% (7949/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  74% (8058/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  75% (8167/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  76% (8276/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  77% (8385/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  78% (8494/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  79% (8603/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  80% (8712/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  81% (8821/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  82% (8929/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  83% (9038/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  84% (9147/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  85% (9256/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  86% (9365/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  87% (9474/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  88% (9583/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  89% (9692/10889), 6.28 MiB | 2.67 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  90% (9801/10889), 8.93 MiB | 3.08 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  90% (9880/10889), 8.93 MiB | 3.08 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  91% (9909/10889), 10.70 MiB | 3.12 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  92% (10018/10889), 12.54 MiB | 3.15 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  93% (10127/10889), 12.54 MiB | 3.15 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  94% (10236/10889), 12.54 MiB | 3.15 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  94% (10247/10889), 12.54 MiB | 3.15 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  95% (10345/10889), 12.54 MiB | 3.15 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  96% (10454/10889), 12.54 MiB | 3.15 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  97% (10563/10889), 12.54 MiB | 3.15 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  98% (10672/10889), 12.54 MiB | 3.15 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects:  99% (10781/10889), 12.54 MiB | 3.15 MiB/s   
+ DEBUG [13f4b0c0] 	remote: Total 10889 (delta 1885), reused 10869 (delta 1865), pack-reused 0[K
+ DEBUG [13f4b0c0] 	
+ DEBUG [13f4b0c0] 	Receiving objects: 100% (10889/10889), 14.43 MiB | 3.19 MiB/s   
+ DEBUG [13f4b0c0] 	Receiving objects: 100% (10889/10889), 14.89 MiB | 3.19 MiB/s, done.
+ DEBUG [13f4b0c0] 	
+ DEBUG [13f4b0c0] 	Resolving deltas:   0% (0/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:   1% (19/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:   2% (39/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:   3% (62/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:   4% (79/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:   5% (99/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:   6% (114/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:   7% (132/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:   8% (151/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:   9% (170/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  10% (189/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  11% (216/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  12% (227/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  13% (246/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  14% (265/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  15% (293/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  16% (305/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  17% (324/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  18% (341/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  19% (361/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  20% (379/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  21% (414/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  22% (427/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  23% (446/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  24% (455/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  25% (472/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  26% (496/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  27% (515/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  28% (533/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  29% (548/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  31% (588/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  32% (604/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  34% (652/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  35% (665/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  36% (681/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  37% (712/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  38% (727/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  39% (738/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  40% (755/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  42% (803/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  43% (811/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  44% (830/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  45% (849/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  46% (877/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  47% (887/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  49% (932/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  50% (944/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  51% (969/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  52% (984/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  53% (1000/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  54% (1030/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  55% (1039/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  56% (1060/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  57% (1083/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  58% (1094/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  59% (1113/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  60% (1132/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  61% (1155/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  62% (1169/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  63% (1191/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  64% (1207/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  65% (1230/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  66% (1248/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  67% (1263/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  68% (1282/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  69% (1303/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  70% (1326/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  71% (1339/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  72% (1359/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  73% (1377/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  74% (1398/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  75% (1415/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  76% (1434/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  77% (1454/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  78% (1471/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  79% (1490/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  80% (1508/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  81% (1527/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  82% (1547/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  83% (1565/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  84% (1584/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  85% (1603/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  86% (1622/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  87% (1640/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  88% (1659/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  89% (1680/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  90% (1699/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  91% (1716/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  95% (1802/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  96% (1823/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  97% (1832/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  98% (1852/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas:  99% (1869/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas: 100% (1885/1885)   
+ DEBUG [13f4b0c0] 	Resolving deltas: 100% (1885/1885), done.
+ DEBUG [13f4b0c0] 	
+ DEBUG [13f4b0c0] 	Checking connectivity... 
+ DEBUG [13f4b0c0] 	done.
+ DEBUG [13f4b0c0] 	
+  INFO [13f4b0c0] Finished in 7.808 seconds with exit status 0 (successful).
+ DEBUG [ad84a466] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [ad84a466] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [ad84a466] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [8090af2c] Running /usr/bin/env git remote update --prune as ubuntu@52.197.20.14
+ DEBUG [8090af2c] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8090af2c] 	Fetching origin
+ DEBUG [8090af2c] 	
+  INFO [8090af2c] Finished in 2.586 seconds with exit status 0 (successful).
+ DEBUG [30abdcdc] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [30abdcdc] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [30abdcdc] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [338362c5] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712041225 as ubuntu@52.197.20.14
+ DEBUG [338362c5] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712041225 )
+  INFO [338362c5] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [25744a2a] Running /usr/bin/env git archive master | tar -x -f - -C /home/ubuntu/Jaybee/releases/20160712041225 as ubuntu@52.197.20.14
+ DEBUG [25744a2a] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/ubuntu/Jaybee/releases/20160712041225 )
+  INFO [25744a2a] Finished in 0.665 seconds with exit status 0 (successful).
+ DEBUG [a0d8084d] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [a0d8084d] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [a0d8084d] Finished in 0.139 seconds with exit status 0 (successful).
+ DEBUG [8d6ea1c8] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@52.197.20.14
+ DEBUG [8d6ea1c8] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [8d6ea1c8] 	dc30c3674277ca7aeafafc530d7ce158b7735b60
+ DEBUG [8d6ea1c8] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [a302e5d7] Running if test ! -d /home/ubuntu/Jaybee/releases/20160712041225; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712041225'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [a302e5d7] Command: if test ! -d /home/ubuntu/Jaybee/releases/20160712041225; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712041225'" 1>&2; false; fi
+ DEBUG [a302e5d7] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [61a0e5b2] Running /usr/bin/env echo "dc30c3674277ca7aeafafc530d7ce158b7735b60" >> REVISION as ubuntu@52.197.20.14
+ DEBUG [61a0e5b2] Command: cd /home/ubuntu/Jaybee/releases/20160712041225 && /usr/bin/env echo "dc30c3674277ca7aeafafc530d7ce158b7735b60" >> REVISION
+  INFO [61a0e5b2] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [45c3eb15] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712041225/config as ubuntu@52.197.20.14
+ DEBUG [45c3eb15] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712041225/config
+  INFO [45c3eb15] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [e4d15503] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/config/database.yml ] as ubuntu@52.197.20.14
+ DEBUG [e4d15503] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/config/database.yml ]
+ DEBUG [e4d15503] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [280e9740] Running [ -f /home/ubuntu/Jaybee/releases/20160712041225/config/database.yml ] as ubuntu@52.197.20.14
+ DEBUG [280e9740] Command: [ -f /home/ubuntu/Jaybee/releases/20160712041225/config/database.yml ]
+ DEBUG [280e9740] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [8a2a2508] Running /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712041225/config/database.yml as ubuntu@52.197.20.14
+ DEBUG [8a2a2508] Command: /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712041225/config/database.yml
+  INFO [8a2a2508] Finished in 0.157 seconds with exit status 0 (successful).
+  INFO [e02aa870] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/database.yml /home/ubuntu/Jaybee/releases/20160712041225/config/database.yml as ubuntu@52.197.20.14
+ DEBUG [e02aa870] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/database.yml /home/ubuntu/Jaybee/releases/20160712041225/config/database.yml
+  INFO [e02aa870] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [2d7956eb] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/config/application.yml ] as ubuntu@52.197.20.14
+ DEBUG [2d7956eb] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/config/application.yml ]
+ DEBUG [2d7956eb] Finished in 0.137 seconds with exit status 1 (failed).
+ DEBUG [8b713d49] Running [ -f /home/ubuntu/Jaybee/releases/20160712041225/config/application.yml ] as ubuntu@52.197.20.14
+ DEBUG [8b713d49] Command: [ -f /home/ubuntu/Jaybee/releases/20160712041225/config/application.yml ]
+ DEBUG [8b713d49] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [37bf6f65] Running /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712041225/config/application.yml as ubuntu@52.197.20.14
+ DEBUG [37bf6f65] Command: /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712041225/config/application.yml
+  INFO [37bf6f65] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [9fc45a1f] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/application.yml /home/ubuntu/Jaybee/releases/20160712041225/config/application.yml as ubuntu@52.197.20.14
+ DEBUG [9fc45a1f] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/application.yml /home/ubuntu/Jaybee/releases/20160712041225/config/application.yml
+  INFO [9fc45a1f] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [89cf83a0] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712041225 /home/ubuntu/Jaybee/releases/20160712041225/tmp /home/ubuntu/Jaybee/releases/20160712041225/vendor /home/ubuntu/Jaybee/releases/20160712041225/public as ubuntu@52.197.20.14
+ DEBUG [89cf83a0] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712041225 /home/ubuntu/Jaybee/releases/20160712041225/tmp /home/ubuntu/Jaybee/releases/20160712041225/vendor /home/ubuntu/Jaybee/releases/20160712041225/public
+  INFO [89cf83a0] Finished in 0.139 seconds with exit status 0 (successful).
+ DEBUG [71163b04] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/bin ] as ubuntu@52.197.20.14
+ DEBUG [71163b04] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/bin ]
+ DEBUG [71163b04] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [0429b948] Running [ -d /home/ubuntu/Jaybee/releases/20160712041225/bin ] as ubuntu@52.197.20.14
+ DEBUG [0429b948] Command: [ -d /home/ubuntu/Jaybee/releases/20160712041225/bin ]
+ DEBUG [0429b948] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [2db33ad6] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712041225/bin as ubuntu@52.197.20.14
+ DEBUG [2db33ad6] Command: /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712041225/bin
+  INFO [2db33ad6] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [d1f76246] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/releases/20160712041225/bin as ubuntu@52.197.20.14
+ DEBUG [d1f76246] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/releases/20160712041225/bin
+  INFO [d1f76246] Finished in 0.139 seconds with exit status 0 (successful).
+ DEBUG [77c4761b] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/log ] as ubuntu@52.197.20.14
+ DEBUG [77c4761b] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/log ]
+ DEBUG [77c4761b] Finished in 0.137 seconds with exit status 1 (failed).
+ DEBUG [a60c742d] Running [ -d /home/ubuntu/Jaybee/releases/20160712041225/log ] as ubuntu@52.197.20.14
+ DEBUG [a60c742d] Command: [ -d /home/ubuntu/Jaybee/releases/20160712041225/log ]
+ DEBUG [a60c742d] Finished in 0.137 seconds with exit status 0 (successful).
+  INFO [e5f2fa1d] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712041225/log as ubuntu@52.197.20.14
+ DEBUG [e5f2fa1d] Command: /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712041225/log
+  INFO [e5f2fa1d] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [6790754c] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/releases/20160712041225/log as ubuntu@52.197.20.14
+ DEBUG [6790754c] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/releases/20160712041225/log
+  INFO [6790754c] Finished in 0.139 seconds with exit status 0 (successful).
+ DEBUG [775c3f16] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/tmp/pids ] as ubuntu@52.197.20.14
+ DEBUG [775c3f16] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/tmp/pids ]
+ DEBUG [775c3f16] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [a6a489c8] Running [ -d /home/ubuntu/Jaybee/releases/20160712041225/tmp/pids ] as ubuntu@52.197.20.14
+ DEBUG [a6a489c8] Command: [ -d /home/ubuntu/Jaybee/releases/20160712041225/tmp/pids ]
+ DEBUG [a6a489c8] Finished in 0.138 seconds with exit status 1 (failed).
+  INFO [7895296f] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/releases/20160712041225/tmp/pids as ubuntu@52.197.20.14
+ DEBUG [7895296f] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/releases/20160712041225/tmp/pids
+  INFO [7895296f] Finished in 0.140 seconds with exit status 0 (successful).
+ DEBUG [7c23d686] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/tmp/cache ] as ubuntu@52.197.20.14
+ DEBUG [7c23d686] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/tmp/cache ]
+ DEBUG [7c23d686] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [f187cd3d] Running [ -d /home/ubuntu/Jaybee/releases/20160712041225/tmp/cache ] as ubuntu@52.197.20.14
+ DEBUG [f187cd3d] Command: [ -d /home/ubuntu/Jaybee/releases/20160712041225/tmp/cache ]
+ DEBUG [f187cd3d] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [4ae608b2] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712041225/tmp/cache as ubuntu@52.197.20.14
+ DEBUG [4ae608b2] Command: /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712041225/tmp/cache
+  INFO [4ae608b2] Finished in 0.230 seconds with exit status 0 (successful).
+  INFO [29ffd493] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/releases/20160712041225/tmp/cache as ubuntu@52.197.20.14
+ DEBUG [29ffd493] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/releases/20160712041225/tmp/cache
+  INFO [29ffd493] Finished in 0.139 seconds with exit status 0 (successful).
+ DEBUG [6e4657df] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/tmp/sockets ] as ubuntu@52.197.20.14
+ DEBUG [6e4657df] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/tmp/sockets ]
+ DEBUG [6e4657df] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [40572681] Running [ -d /home/ubuntu/Jaybee/releases/20160712041225/tmp/sockets ] as ubuntu@52.197.20.14
+ DEBUG [40572681] Command: [ -d /home/ubuntu/Jaybee/releases/20160712041225/tmp/sockets ]
+ DEBUG [40572681] Finished in 0.137 seconds with exit status 1 (failed).
+  INFO [178f7cb3] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/releases/20160712041225/tmp/sockets as ubuntu@52.197.20.14
+ DEBUG [178f7cb3] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/releases/20160712041225/tmp/sockets
+  INFO [178f7cb3] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [2587cfd2] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/vendor/bundle ] as ubuntu@52.197.20.14
+ DEBUG [2587cfd2] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/vendor/bundle ]
+ DEBUG [2587cfd2] Finished in 0.137 seconds with exit status 1 (failed).
+ DEBUG [aef9ac19] Running [ -d /home/ubuntu/Jaybee/releases/20160712041225/vendor/bundle ] as ubuntu@52.197.20.14
+ DEBUG [aef9ac19] Command: [ -d /home/ubuntu/Jaybee/releases/20160712041225/vendor/bundle ]
+ DEBUG [aef9ac19] Finished in 0.137 seconds with exit status 1 (failed).
+  INFO [b3101cf8] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/releases/20160712041225/vendor/bundle as ubuntu@52.197.20.14
+ DEBUG [b3101cf8] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/releases/20160712041225/vendor/bundle
+  INFO [b3101cf8] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [49d2cc8c] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/public/system ] as ubuntu@52.197.20.14
+ DEBUG [49d2cc8c] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/public/system ]
+ DEBUG [49d2cc8c] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [26a089d3] Running [ -d /home/ubuntu/Jaybee/releases/20160712041225/public/system ] as ubuntu@52.197.20.14
+ DEBUG [26a089d3] Command: [ -d /home/ubuntu/Jaybee/releases/20160712041225/public/system ]
+ DEBUG [26a089d3] Finished in 0.138 seconds with exit status 1 (failed).
+  INFO [5732c11c] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/releases/20160712041225/public/system as ubuntu@52.197.20.14
+ DEBUG [5732c11c] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/releases/20160712041225/public/system
+  INFO [5732c11c] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [5d0e53ea] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/public/uploads ] as ubuntu@52.197.20.14
+ DEBUG [5d0e53ea] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/public/uploads ]
+ DEBUG [5d0e53ea] Finished in 0.138 seconds with exit status 1 (failed).
+ DEBUG [c2cccecc] Running [ -d /home/ubuntu/Jaybee/releases/20160712041225/public/uploads ] as ubuntu@52.197.20.14
+ DEBUG [c2cccecc] Command: [ -d /home/ubuntu/Jaybee/releases/20160712041225/public/uploads ]
+ DEBUG [c2cccecc] Finished in 0.137 seconds with exit status 1 (failed).
+  INFO [5e414973] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/releases/20160712041225/public/uploads as ubuntu@52.197.20.14
+ DEBUG [5e414973] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/releases/20160712041225/public/uploads
+  INFO [5e414973] Finished in 0.138 seconds with exit status 0 (successful).
+ DEBUG [941dd19b] Running [ -L /home/ubuntu/Jaybee/releases/20160712041225/public/assets ] as ubuntu@52.197.20.14
+ DEBUG [941dd19b] Command: [ -L /home/ubuntu/Jaybee/releases/20160712041225/public/assets ]
+ DEBUG [941dd19b] Finished in 0.137 seconds with exit status 1 (failed).
+ DEBUG [328cb06b] Running [ -d /home/ubuntu/Jaybee/releases/20160712041225/public/assets ] as ubuntu@52.197.20.14
+ DEBUG [328cb06b] Command: [ -d /home/ubuntu/Jaybee/releases/20160712041225/public/assets ]
+ DEBUG [328cb06b] Finished in 0.137 seconds with exit status 1 (failed).
+  INFO [86ce1aa3] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/assets /home/ubuntu/Jaybee/releases/20160712041225/public/assets as ubuntu@52.197.20.14
+ DEBUG [86ce1aa3] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/assets /home/ubuntu/Jaybee/releases/20160712041225/public/assets
+  INFO [86ce1aa3] Finished in 0.178 seconds with exit status 0 (successful).
+ DEBUG [75212930] Running if test ! -d /home/ubuntu/Jaybee/releases/20160712041225; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712041225'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [75212930] Command: if test ! -d /home/ubuntu/Jaybee/releases/20160712041225; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712041225'" 1>&2; false; fi
+ DEBUG [75212930] Finished in 0.138 seconds with exit status 0 (successful).
+  INFO [3bc16b1e] Running ~/.rvm/bin/rvm ruby-2.3.1 do bundle install --path /home/ubuntu/Jaybee/shared/bundle --without development test --deployment --quiet as ubuntu@52.197.20.14
+ DEBUG [3bc16b1e] Command: cd /home/ubuntu/Jaybee/releases/20160712041225 && ~/.rvm/bin/rvm ruby-2.3.1 do bundle install --path /home/ubuntu/Jaybee/shared/bundle --without development test --deployment --quiet
+ DEBUG [3bc16b1e] 	[32mRVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
+ DEBUG [3bc16b1e] 	
+ DEBUG [3bc16b1e] 	you can ignore these warnings with 'rvm rvmrc warning ignore /home/ubuntu/Jaybee/releases/20160712041225/Gemfile'.
+ DEBUG [3bc16b1e] 	
+ DEBUG [3bc16b1e] 	To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
+ DEBUG [3bc16b1e] 	
+ DEBUG [3bc16b1e] 	[0m
+ DEBUG [3bc16b1e] 	
+ DEBUG [3bc16b1e] 	/home/ubuntu/.rvm/scripts/set: line 19: exec: bundle: not found
+ DEBUG [3bc16b1e] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-12 13:36:29 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b48571c5] Running ~/.rvm/bin/rvm version as ubuntu@52.196.132.17
+ DEBUG [b48571c5] Command: ~/.rvm/bin/rvm version
+ DEBUG [b48571c5] 	rvm 1.27.0 (latest) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+ DEBUG [b48571c5] 	
+ DEBUG [b48571c5] Finished in 2.328 seconds with exit status 0 (successful).
+ DEBUG [02a092d6] Running ~/.rvm/bin/rvm current as ubuntu@52.196.132.17
+ DEBUG [02a092d6] Command: ~/.rvm/bin/rvm current
+ DEBUG [02a092d6] 	ruby-2.3.1@rails426
+ DEBUG [02a092d6] 	
+ DEBUG [02a092d6] Finished in 1.701 seconds with exit status 0 (successful).
+ DEBUG [43a60e4a] Running ~/.rvm/bin/rvm ruby-2.3.1 do ruby --version as ubuntu@52.196.132.17
+ DEBUG [43a60e4a] Command: ~/.rvm/bin/rvm ruby-2.3.1 do ruby --version
+ DEBUG [43a60e4a] 	ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
+ DEBUG [43a60e4a] 	
+ DEBUG [43a60e4a] Finished in 0.478 seconds with exit status 0 (successful).
+  INFO [4081e752] Running /usr/bin/env mkdir -p /tmp/jaybee/ as ubuntu@52.196.132.17
+ DEBUG [4081e752] Command: /usr/bin/env mkdir -p /tmp/jaybee/
+  INFO [4081e752] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/jaybee/git-ssh.sh 0.0%
+  INFO Uploading /tmp/jaybee/git-ssh.sh 100.0%
+  INFO [9e027864] Running /usr/bin/env chmod +rx /tmp/jaybee/git-ssh.sh as ubuntu@52.196.132.17
+ DEBUG [9e027864] Command: /usr/bin/env chmod +rx /tmp/jaybee/git-ssh.sh
+  INFO [9e027864] Finished in 0.242 seconds with exit status 0 (successful).
+  INFO [f193e180] Running /usr/bin/env git ls-remote --heads git@github.com:phileiny/Jaybee.git as ubuntu@52.196.132.17
+ DEBUG [f193e180] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:phileiny/Jaybee.git )
+ DEBUG [f193e180] 	dc30c3674277ca7aeafafc530d7ce158b7735b60
+ DEBUG [f193e180] 		
+ DEBUG [f193e180] 	refs/heads/master
+ DEBUG [f193e180] 	
+  INFO [f193e180] Finished in 2.814 seconds with exit status 0 (successful).
+  INFO [8591d64e] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared /home/ubuntu/Jaybee/releases as ubuntu@52.196.132.17
+ DEBUG [8591d64e] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared /home/ubuntu/Jaybee/releases
+  INFO [8591d64e] Finished in 0.238 seconds with exit status 0 (successful).
+  INFO [d1628b89] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/shared/public/assets as ubuntu@52.196.132.17
+ DEBUG [d1628b89] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/shared/public/assets
+  INFO [d1628b89] Finished in 0.241 seconds with exit status 0 (successful).
+  INFO [f4d98178] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/config as ubuntu@52.196.132.17
+ DEBUG [f4d98178] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/config
+  INFO [f4d98178] Finished in 0.238 seconds with exit status 0 (successful).
+ DEBUG [07c0ae41] Running [ -f /home/ubuntu/Jaybee/shared/config/database.yml ] as ubuntu@52.196.132.17
+ DEBUG [07c0ae41] Command: [ -f /home/ubuntu/Jaybee/shared/config/database.yml ]
+ DEBUG [07c0ae41] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [e18ff6ac] Running [ -f /home/ubuntu/Jaybee/shared/config/application.yml ] as ubuntu@52.196.132.17
+ DEBUG [e18ff6ac] Command: [ -f /home/ubuntu/Jaybee/shared/config/application.yml ]
+ DEBUG [e18ff6ac] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [28947272] Running [ -f /home/ubuntu/Jaybee/shared/puma.rb ] as ubuntu@52.196.132.17
+ DEBUG [28947272] Command: [ -f /home/ubuntu/Jaybee/shared/puma.rb ]
+ DEBUG [28947272] Finished in 0.239 seconds with exit status 1 (failed).
+  WARN puma.rb NOT FOUND!
+ DEBUG Uploading /home/ubuntu/Jaybee/shared/puma.rb 0.0%
+  INFO Uploading /home/ubuntu/Jaybee/shared/puma.rb 100.0%
+  INFO puma.rb generated
+ DEBUG [256d5b28] Running [ -f /home/ubuntu/Jaybee/current/REVISION ] as ubuntu@52.196.132.17
+ DEBUG [256d5b28] Command: [ -f /home/ubuntu/Jaybee/current/REVISION ]
+ DEBUG [256d5b28] Finished in 0.241 seconds with exit status 1 (failed).
+ DEBUG [ff1a6b48] Running [ -f /home/ubuntu/Jaybee/repo/HEAD ] as ubuntu@52.196.132.17
+ DEBUG [ff1a6b48] Command: [ -f /home/ubuntu/Jaybee/repo/HEAD ]
+ DEBUG [ff1a6b48] Finished in 0.239 seconds with exit status 1 (failed).
+ DEBUG [ccae798c] Running if test ! -d /home/ubuntu/Jaybee; then echo "Directory does not exist '/home/ubuntu/Jaybee'" 1>&2; false; fi as ubuntu@52.196.132.17
+ DEBUG [ccae798c] Command: if test ! -d /home/ubuntu/Jaybee; then echo "Directory does not exist '/home/ubuntu/Jaybee'" 1>&2; false; fi
+ DEBUG [ccae798c] Finished in 0.241 seconds with exit status 0 (successful).
+  INFO [1c07778e] Running /usr/bin/env git clone --mirror git@github.com:phileiny/Jaybee.git /home/ubuntu/Jaybee/repo as ubuntu@52.196.132.17
+ DEBUG [1c07778e] Command: cd /home/ubuntu/Jaybee && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git clone --mirror git@github.com:phileiny/Jaybee.git /home/ubuntu/Jaybee/repo )
+ DEBUG [1c07778e] 	Cloning into bare repository '/home/ubuntu/Jaybee/repo'...
+ DEBUG [1c07778e] 	remote: Counting objects: 10889, done.[K
+ DEBUG [1c07778e] 	
+ DEBUG [1c07778e] 	remote: Compressing objects:   0% (1/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:   1% (79/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:   2% (157/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:   3% (235/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:   4% (313/7815)   [K
+ DEBUG [1c07778e] 	remote: Compress
+ DEBUG [1c07778e] 	ing objects:   5% (391/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:   6% (469/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:   7% (548/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:   8% (626/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:   9% (704/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  10% (782/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  11% (860/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  12% (938/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  13% (1016/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  14% (1095/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  15% (1173/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  16% (1251/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  17% (1329/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  18% (1407/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  19% (1485/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  20% (1563/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  21% (1642/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  22% (1720/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  23% (1798/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  24% (1876/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  25% (1954/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  26% (2032/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  27% (2111/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  28% (2189/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  29% (2267/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  30% (2345/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  31% (2423/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  32% (2501/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  33% (2579/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  34% (2658/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  35% (2736/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  36% (2814/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  37% (2892/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  38% (2970/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  39% (3048/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  40% (3126/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  41% (3205/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  42% (3283/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  43% (3361/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  44% (3439/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  45% (3517/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  46% (3595/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  47% (3674/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  48% (3752/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  49% (3830/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  50% (3908/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  51% (3986/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  52% (4064/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  53% (4142/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  54% (4221/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  55% (4299/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  56% (4377/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  57% (4455/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  58% (4533/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  59% (4611/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  60% (4689/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  61% (4768/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  62% (4846/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  63% (4924/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  64% (5002/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  65% (5080/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  66% (5158/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  67% (5237/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  68% (5315/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  69% (5393/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  70% (5471/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  71% (5549/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  72% (5627/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  73% (5705/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  74% (5784/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  75% (5862/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  76% (5940/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  77% (6018/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  78% (6096/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  79% (6174/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  80% (6252/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  81% (6331/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  82% (6409/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  83% (6487/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  84% (6565/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  85% (6643/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  86% (6721/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  87% (6800/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  88% (6878/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  89% (6956/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  90% (7034/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  91% (7112/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  92% (7190/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  93% (7268/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  94% (7347/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  95% (7425/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  96% (7503/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  97% (7581/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  98% (7659/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects:  99% (7737/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects: 100% (7815/7815)   [K
+ DEBUG [1c07778e] 	remote: Compressing objects: 100% (7815/7815), done.[K
+ DEBUG [1c07778e] 	
+ DEBUG [1c07778e] 	Receiving objects:   0% (1/10889)   
+ DEBUG [1c07778e] 	Receiving objects:   1% (109/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:   2% (218/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:   3% (327/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:   4% (436/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:   5% (545/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:   6% (654/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:   7% (763/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:   8% (872/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:   9% (981/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  10% (1089/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  11% (1198/10889), 172.00 KiB | 301.00 KiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  11% (1240/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  12% (1307/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  13% (1416/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  14% (1525/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  15% (1634/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  16% (1743/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  17% (1852/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  18% (1961/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  19% (2069/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  20% (2178/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  21% (2287/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  22% (2396/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  23% (2505/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  24% (2614/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  25% (2723/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  26% (2832/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  27% (2941/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  28% (3049/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  29% (3158/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  30% (3267/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  31% (3376/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  32% (3485/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  33% (3594/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  34% (3703/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  35% (3812/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  36% (3921/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  37% (4029/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  38% (4138/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  39% (4247/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  40% (4356/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  41% (4465/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  42% (4574/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  43% (4683/10889), 1.61 MiB | 1.43 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  44% (4792/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  45% (4901/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  46% (5009/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  47% (5118/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  48% (5227/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  49% (5336/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  50% (5445/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  51% (5554/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  52% (5663/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  53% (5772/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  54% (5881/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  55% (5989/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  56% (6098/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  57% (6207/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  58% (6316/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  59% (6425/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  60% (6534/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  61% (6643/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  62% (6752/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  63% (6861/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  64% (6969/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  65% (7078/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  66% (7187/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  67% (7296/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  68% (7405/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  68% (7512/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  69% (7514/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  70% (7623/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  71% (7732/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  72% (7841/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  73% (7949/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  74% (8058/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  75% (8167/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  76% (8276/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  77% (8385/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  78% (8494/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  79% (8603/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  80% (8712/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  81% (8821/10889), 4.26 MiB | 2.53 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  82% (8929/10889), 7.48 MiB | 3.32 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  83% (9038/10889), 7.48 MiB | 3.32 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  84% (9147/10889), 7.48 MiB | 3.32 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  85% (9256/10889), 7.48 MiB | 3.32 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  86% (9365/10889), 7.48 MiB | 3.32 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  87% (9474/10889), 7.48 MiB | 3.32 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  88% (9583/10889), 7.48 MiB | 3.32 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  89% (9692/10889), 7.48 MiB | 3.32 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  90% (9801/10889), 7.48 MiB | 3.32 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  91% (9909/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  92% (10018/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  93% (10127/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  93% (10171/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  94% (10236/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  95% (10345/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  96% (10454/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  97% (10563/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  98% (10672/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects:  99% (10781/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	remote: Total 10889 (delta 1885), reused 10869 (delta 1865), pack-reused 0[K
+ DEBUG [1c07778e] 	
+ DEBUG [1c07778e] 	Receiving objects: 100% (10889/10889), 11.44 MiB | 4.05 MiB/s   
+ DEBUG [1c07778e] 	Receiving objects: 100% (10889/10889), 14.89 MiB | 4.05 MiB/s, done.
+ DEBUG [1c07778e] 	
+ DEBUG [1c07778e] 	Resolving deltas:   0% (0/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:   1% (19/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:   2% (39/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:   3% (62/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:   4% (79/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:   5% (99/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:   6% (114/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:   7% (132/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:   8% (151/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:   9% (170/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  10% (189/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  11% (216/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  12% (227/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  13% (246/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  14% (265/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  15% (293/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  16% (305/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  17% (324/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  18% (341/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  19% (361/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  20% (379/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  21% (414/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  22% (427/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  23% (446/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  24% (455/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  25% (472/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  26% (496/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  27% (515/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  28% (533/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  29% (548/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  31% (588/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  32% (604/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  34% (652/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  35% (665/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  36% (681/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  37% (712/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  38% (727/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  39% (738/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  40% (755/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  42% (803/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  43% (811/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  44% (830/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  45% (849/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  46% (877/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  47% (887/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  49% (932/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  50% (944/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  51% (969/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  52% (984/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  53% (1000/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  54% (1030/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  55% (1039/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  56% (1060/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  57% (1083/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  58% (1094/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  59% (1113/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  60% (1132/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  61% (1155/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  62% (1169/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  63% (1191/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  64% (1207/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  65% (1230/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  66% (1248/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  67% (1263/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  68% (1282/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  69% (1303/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  70% (1326/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  71% (1339/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  72% (1359/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  73% (1377/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  74% (1398/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  75% (1415/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  76% (1434/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  77% (1454/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  78% (1471/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  79% (1490/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  80% (1508/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  81% (1527/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  82% (1547/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  83% (1565/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  84% (1584/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  85% (1603/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  86% (1622/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  87% (1640/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  88% (1659/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  89% (1680/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  90% (1699/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  91% (1716/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  95% (1802/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  96% (1823/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  97% (1832/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  98% (1852/1885)   
+ DEBUG [1c07778e] 	Resolving deltas:  99% (1869/1885)   
+ DEBUG [1c07778e] 	Resolving deltas: 100% (1885/1885)   
+ DEBUG [1c07778e] 	Resolving deltas: 100% (1885/1885), done.
+ DEBUG [1c07778e] 	
+ DEBUG [1c07778e] 	Checking connectivity... 
+ DEBUG [1c07778e] 	done.
+ DEBUG [1c07778e] 	
+  INFO [1c07778e] Finished in 6.589 seconds with exit status 0 (successful).
+ DEBUG [38b08a3c] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.196.132.17
+ DEBUG [38b08a3c] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [38b08a3c] Finished in 0.240 seconds with exit status 0 (successful).
+  INFO [b219241b] Running /usr/bin/env git remote update --prune as ubuntu@52.196.132.17
+ DEBUG [b219241b] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [b219241b] 	Fetching origin
+ DEBUG [b219241b] 	
+  INFO [b219241b] Finished in 3.142 seconds with exit status 0 (successful).
+ DEBUG [a4055ea7] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.196.132.17
+ DEBUG [a4055ea7] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [a4055ea7] Finished in 0.240 seconds with exit status 0 (successful).
+  INFO [a40887c5] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712053640 as ubuntu@52.196.132.17
+ DEBUG [a40887c5] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712053640 )
+  INFO [a40887c5] Finished in 0.241 seconds with exit status 0 (successful).
+  INFO [97a666cc] Running /usr/bin/env git archive master | tar -x -f - -C /home/ubuntu/Jaybee/releases/20160712053640 as ubuntu@52.196.132.17
+ DEBUG [97a666cc] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/ubuntu/Jaybee/releases/20160712053640 )
+  INFO [97a666cc] Finished in 0.691 seconds with exit status 0 (successful).
+ DEBUG [1aad4eb7] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.196.132.17
+ DEBUG [1aad4eb7] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [1aad4eb7] Finished in 0.238 seconds with exit status 0 (successful).
+ DEBUG [6ae6cbe4] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@52.196.132.17
+ DEBUG [6ae6cbe4] Command: cd /home/ubuntu/Jaybee/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [6ae6cbe4] 	dc30c3674277ca7aeafafc530d7ce158b7735b60
+ DEBUG [6ae6cbe4] 	
+ DEBUG [6ae6cbe4] Finished in 0.246 seconds with exit status 0 (successful).
+ DEBUG [c8643256] Running if test ! -d /home/ubuntu/Jaybee/releases/20160712053640; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712053640'" 1>&2; false; fi as ubuntu@52.196.132.17
+ DEBUG [c8643256] Command: if test ! -d /home/ubuntu/Jaybee/releases/20160712053640; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712053640'" 1>&2; false; fi
+ DEBUG [c8643256] Finished in 0.239 seconds with exit status 0 (successful).
+  INFO [2b3ec399] Running /usr/bin/env echo "dc30c3674277ca7aeafafc530d7ce158b7735b60" >> REVISION as ubuntu@52.196.132.17
+ DEBUG [2b3ec399] Command: cd /home/ubuntu/Jaybee/releases/20160712053640 && /usr/bin/env echo "dc30c3674277ca7aeafafc530d7ce158b7735b60" >> REVISION
+  INFO [2b3ec399] Finished in 0.239 seconds with exit status 0 (successful).
+  INFO [b483394e] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712053640/config as ubuntu@52.196.132.17
+ DEBUG [b483394e] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712053640/config
+  INFO [b483394e] Finished in 0.241 seconds with exit status 0 (successful).
+ DEBUG [900f3fd2] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/config/database.yml ] as ubuntu@52.196.132.17
+ DEBUG [900f3fd2] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/config/database.yml ]
+ DEBUG [900f3fd2] Finished in 0.242 seconds with exit status 1 (failed).
+ DEBUG [b42e0c8c] Running [ -f /home/ubuntu/Jaybee/releases/20160712053640/config/database.yml ] as ubuntu@52.196.132.17
+ DEBUG [b42e0c8c] Command: [ -f /home/ubuntu/Jaybee/releases/20160712053640/config/database.yml ]
+ DEBUG [b42e0c8c] Finished in 0.241 seconds with exit status 0 (successful).
+  INFO [3fc15174] Running /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712053640/config/database.yml as ubuntu@52.196.132.17
+ DEBUG [3fc15174] Command: /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712053640/config/database.yml
+  INFO [3fc15174] Finished in 0.242 seconds with exit status 0 (successful).
+  INFO [38eba4cd] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/database.yml /home/ubuntu/Jaybee/releases/20160712053640/config/database.yml as ubuntu@52.196.132.17
+ DEBUG [38eba4cd] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/database.yml /home/ubuntu/Jaybee/releases/20160712053640/config/database.yml
+  INFO [38eba4cd] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [68f2874d] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/config/application.yml ] as ubuntu@52.196.132.17
+ DEBUG [68f2874d] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/config/application.yml ]
+ DEBUG [68f2874d] Finished in 0.240 seconds with exit status 1 (failed).
+ DEBUG [d2bb3b12] Running [ -f /home/ubuntu/Jaybee/releases/20160712053640/config/application.yml ] as ubuntu@52.196.132.17
+ DEBUG [d2bb3b12] Command: [ -f /home/ubuntu/Jaybee/releases/20160712053640/config/application.yml ]
+ DEBUG [d2bb3b12] Finished in 0.240 seconds with exit status 0 (successful).
+  INFO [58cc3694] Running /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712053640/config/application.yml as ubuntu@52.196.132.17
+ DEBUG [58cc3694] Command: /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712053640/config/application.yml
+  INFO [58cc3694] Finished in 0.239 seconds with exit status 0 (successful).
+  INFO [7d051444] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/application.yml /home/ubuntu/Jaybee/releases/20160712053640/config/application.yml as ubuntu@52.196.132.17
+ DEBUG [7d051444] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/application.yml /home/ubuntu/Jaybee/releases/20160712053640/config/application.yml
+  INFO [7d051444] Finished in 0.240 seconds with exit status 0 (successful).
+  INFO [ffbf43c9] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712053640 /home/ubuntu/Jaybee/releases/20160712053640/tmp /home/ubuntu/Jaybee/releases/20160712053640/vendor /home/ubuntu/Jaybee/releases/20160712053640/public as ubuntu@52.196.132.17
+ DEBUG [ffbf43c9] Command: /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712053640 /home/ubuntu/Jaybee/releases/20160712053640/tmp /home/ubuntu/Jaybee/releases/20160712053640/vendor /home/ubuntu/Jaybee/releases/20160712053640/public
+  INFO [ffbf43c9] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [4379580a] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/bin ] as ubuntu@52.196.132.17
+ DEBUG [4379580a] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/bin ]
+ DEBUG [4379580a] Finished in 0.241 seconds with exit status 1 (failed).
+ DEBUG [da763a92] Running [ -d /home/ubuntu/Jaybee/releases/20160712053640/bin ] as ubuntu@52.196.132.17
+ DEBUG [da763a92] Command: [ -d /home/ubuntu/Jaybee/releases/20160712053640/bin ]
+ DEBUG [da763a92] Finished in 0.240 seconds with exit status 0 (successful).
+  INFO [2039c2d5] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712053640/bin as ubuntu@52.196.132.17
+ DEBUG [2039c2d5] Command: /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712053640/bin
+  INFO [2039c2d5] Finished in 0.241 seconds with exit status 0 (successful).
+  INFO [d5e16d46] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/releases/20160712053640/bin as ubuntu@52.196.132.17
+ DEBUG [d5e16d46] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/releases/20160712053640/bin
+  INFO [d5e16d46] Finished in 0.241 seconds with exit status 0 (successful).
+ DEBUG [4da7f21d] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/log ] as ubuntu@52.196.132.17
+ DEBUG [4da7f21d] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/log ]
+ DEBUG [4da7f21d] Finished in 0.240 seconds with exit status 1 (failed).
+ DEBUG [3d6d7893] Running [ -d /home/ubuntu/Jaybee/releases/20160712053640/log ] as ubuntu@52.196.132.17
+ DEBUG [3d6d7893] Command: [ -d /home/ubuntu/Jaybee/releases/20160712053640/log ]
+ DEBUG [3d6d7893] Finished in 0.240 seconds with exit status 0 (successful).
+  INFO [ad7f46bb] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712053640/log as ubuntu@52.196.132.17
+ DEBUG [ad7f46bb] Command: /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712053640/log
+  INFO [ad7f46bb] Finished in 0.239 seconds with exit status 0 (successful).
+  INFO [29253b32] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/releases/20160712053640/log as ubuntu@52.196.132.17
+ DEBUG [29253b32] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/releases/20160712053640/log
+  INFO [29253b32] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [076ab8f2] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/tmp/pids ] as ubuntu@52.196.132.17
+ DEBUG [076ab8f2] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/tmp/pids ]
+ DEBUG [076ab8f2] Finished in 0.243 seconds with exit status 1 (failed).
+ DEBUG [e4ace5ae] Running [ -d /home/ubuntu/Jaybee/releases/20160712053640/tmp/pids ] as ubuntu@52.196.132.17
+ DEBUG [e4ace5ae] Command: [ -d /home/ubuntu/Jaybee/releases/20160712053640/tmp/pids ]
+ DEBUG [e4ace5ae] Finished in 0.239 seconds with exit status 1 (failed).
+  INFO [7a931375] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/releases/20160712053640/tmp/pids as ubuntu@52.196.132.17
+ DEBUG [7a931375] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/releases/20160712053640/tmp/pids
+  INFO [7a931375] Finished in 0.241 seconds with exit status 0 (successful).
+ DEBUG [d018b625] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/tmp/cache ] as ubuntu@52.196.132.17
+ DEBUG [d018b625] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/tmp/cache ]
+ DEBUG [d018b625] Finished in 0.238 seconds with exit status 1 (failed).
+ DEBUG [7888bcd5] Running [ -d /home/ubuntu/Jaybee/releases/20160712053640/tmp/cache ] as ubuntu@52.196.132.17
+ DEBUG [7888bcd5] Command: [ -d /home/ubuntu/Jaybee/releases/20160712053640/tmp/cache ]
+ DEBUG [7888bcd5] Finished in 0.241 seconds with exit status 0 (successful).
+  INFO [1a40e175] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712053640/tmp/cache as ubuntu@52.196.132.17
+ DEBUG [1a40e175] Command: /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712053640/tmp/cache
+  INFO [1a40e175] Finished in 0.332 seconds with exit status 0 (successful).
+  INFO [c739e276] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/releases/20160712053640/tmp/cache as ubuntu@52.196.132.17
+ DEBUG [c739e276] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/releases/20160712053640/tmp/cache
+  INFO [c739e276] Finished in 0.239 seconds with exit status 0 (successful).
+ DEBUG [6140fc7b] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/tmp/sockets ] as ubuntu@52.196.132.17
+ DEBUG [6140fc7b] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/tmp/sockets ]
+ DEBUG [6140fc7b] Finished in 0.240 seconds with exit status 1 (failed).
+ DEBUG [0a31a75f] Running [ -d /home/ubuntu/Jaybee/releases/20160712053640/tmp/sockets ] as ubuntu@52.196.132.17
+ DEBUG [0a31a75f] Command: [ -d /home/ubuntu/Jaybee/releases/20160712053640/tmp/sockets ]
+ DEBUG [0a31a75f] Finished in 0.240 seconds with exit status 1 (failed).
+  INFO [4b00fe26] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/releases/20160712053640/tmp/sockets as ubuntu@52.196.132.17
+ DEBUG [4b00fe26] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/releases/20160712053640/tmp/sockets
+  INFO [4b00fe26] Finished in 0.241 seconds with exit status 0 (successful).
+ DEBUG [c9909aa2] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/vendor/bundle ] as ubuntu@52.196.132.17
+ DEBUG [c9909aa2] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/vendor/bundle ]
+ DEBUG [c9909aa2] Finished in 0.240 seconds with exit status 1 (failed).
+ DEBUG [d9628779] Running [ -d /home/ubuntu/Jaybee/releases/20160712053640/vendor/bundle ] as ubuntu@52.196.132.17
+ DEBUG [d9628779] Command: [ -d /home/ubuntu/Jaybee/releases/20160712053640/vendor/bundle ]
+ DEBUG [d9628779] Finished in 0.240 seconds with exit status 1 (failed).
+  INFO [92d46e61] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/releases/20160712053640/vendor/bundle as ubuntu@52.196.132.17
+ DEBUG [92d46e61] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/releases/20160712053640/vendor/bundle
+  INFO [92d46e61] Finished in 0.240 seconds with exit status 0 (successful).
+ DEBUG [871fbef6] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/public/system ] as ubuntu@52.196.132.17
+ DEBUG [871fbef6] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/public/system ]
+ DEBUG [871fbef6] Finished in 0.240 seconds with exit status 1 (failed).
+ DEBUG [cee7787e] Running [ -d /home/ubuntu/Jaybee/releases/20160712053640/public/system ] as ubuntu@52.196.132.17
+ DEBUG [cee7787e] Command: [ -d /home/ubuntu/Jaybee/releases/20160712053640/public/system ]
+ DEBUG [cee7787e] Finished in 0.239 seconds with exit status 1 (failed).
+  INFO [5cc6f6a2] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/releases/20160712053640/public/system as ubuntu@52.196.132.17
+ DEBUG [5cc6f6a2] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/releases/20160712053640/public/system
+  INFO [5cc6f6a2] Finished in 0.242 seconds with exit status 0 (successful).
+ DEBUG [780b91a2] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/public/uploads ] as ubuntu@52.196.132.17
+ DEBUG [780b91a2] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/public/uploads ]
+ DEBUG [780b91a2] Finished in 0.240 seconds with exit status 1 (failed).
+ DEBUG [95b55b82] Running [ -d /home/ubuntu/Jaybee/releases/20160712053640/public/uploads ] as ubuntu@52.196.132.17
+ DEBUG [95b55b82] Command: [ -d /home/ubuntu/Jaybee/releases/20160712053640/public/uploads ]
+ DEBUG [95b55b82] Finished in 0.240 seconds with exit status 1 (failed).
+  INFO [f90cd7a1] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/releases/20160712053640/public/uploads as ubuntu@52.196.132.17
+ DEBUG [f90cd7a1] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/releases/20160712053640/public/uploads
+  INFO [f90cd7a1] Finished in 0.241 seconds with exit status 0 (successful).
+ DEBUG [dd814b6c] Running [ -L /home/ubuntu/Jaybee/releases/20160712053640/public/assets ] as ubuntu@52.196.132.17
+ DEBUG [dd814b6c] Command: [ -L /home/ubuntu/Jaybee/releases/20160712053640/public/assets ]
+ DEBUG [dd814b6c] Finished in 0.238 seconds with exit status 1 (failed).
+ DEBUG [6e2df07b] Running [ -d /home/ubuntu/Jaybee/releases/20160712053640/public/assets ] as ubuntu@52.196.132.17
+ DEBUG [6e2df07b] Command: [ -d /home/ubuntu/Jaybee/releases/20160712053640/public/assets ]
+ DEBUG [6e2df07b] Finished in 0.240 seconds with exit status 1 (failed).
+  INFO [b195a0cf] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/assets /home/ubuntu/Jaybee/releases/20160712053640/public/assets as ubuntu@52.196.132.17
+ DEBUG [b195a0cf] Command: /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/assets /home/ubuntu/Jaybee/releases/20160712053640/public/assets
+  INFO [b195a0cf] Finished in 0.243 seconds with exit status 0 (successful).
+ DEBUG [c547fdd7] Running if test ! -d /home/ubuntu/Jaybee/releases/20160712053640; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712053640'" 1>&2; false; fi as ubuntu@52.196.132.17
+ DEBUG [c547fdd7] Command: if test ! -d /home/ubuntu/Jaybee/releases/20160712053640; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712053640'" 1>&2; false; fi
+ DEBUG [c547fdd7] Finished in 0.241 seconds with exit status 0 (successful).
+  INFO [77150a25] Running ~/.rvm/bin/rvm ruby-2.3.1 do bundle install --path /home/ubuntu/Jaybee/shared/bundle --without development test --deployment --quiet as ubuntu@52.196.132.17
+ DEBUG [77150a25] Command: cd /home/ubuntu/Jaybee/releases/20160712053640 && ~/.rvm/bin/rvm ruby-2.3.1 do bundle install --path /home/ubuntu/Jaybee/shared/bundle --without development test --deployment --quiet
+ DEBUG [77150a25] 	[32mRVM used your Gemfile for selecting Ruby, it is all fine - Heroku does that too,
+ DEBUG [77150a25] 	
+ DEBUG [77150a25] 	you can ignore these warnings with 'rvm rvmrc warning ignore /home/ubuntu/Jaybee/releases/20160712053640/Gemfile'.
+ DEBUG [77150a25] 	
+ DEBUG [77150a25] 	To ignore the warning for all files run 'rvm rvmrc warning ignore allGemfiles'.
+ DEBUG [77150a25] 	
+ DEBUG [77150a25] 	[0m
+ DEBUG [77150a25] 	
+ DEBUG [77150a25] 	/home/ubuntu/.rvm/scripts/set: line 19: exec: bundle: not found
+ DEBUG [77150a25] 	

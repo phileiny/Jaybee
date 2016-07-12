@@ -1,7 +1,7 @@
-server '52.197.20.14', user: 'ubuntu', roles: %w{web app db}  # server IP是等下建完Ubuntu後AWS隨機給的的ip，或你在AWS上設定保留的ip (Elastic IP)。
+server '52.196.132.17', user: 'ubuntu', roles: %w{web app db}  # server IP是等下建完Ubuntu後AWS隨機給的的ip，或你在AWS上設定保留的ip (Elastic IP)。
 # server-based syntax
 # ======================
-# Defines a single server with a list of roles and multiple properties.
+# Defines a single server with a CLlist of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
