@@ -256,3 +256,283 @@
  DEBUG [e9b1ca24] 	
  DEBUG [e9b1ca24] 	(See full trace by running task with --trace)
  DEBUG [e9b1ca24] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-07-12 11:35:20 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [cafa9512] Running [ -d /home/ubuntu/.rbenv/versions/2.3.1 ] as ubuntu@52.197.20.14
+ DEBUG [cafa9512] Command: [ -d /home/ubuntu/.rbenv/versions/2.3.1 ]
+ DEBUG [cafa9512] Finished in 1.019 seconds with exit status 0 (successful).
+  INFO [59ae22f4] Running /usr/bin/env mkdir -p /tmp/jaybee/ as ubuntu@52.197.20.14
+ DEBUG [59ae22f4] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp/jaybee/ )
+  INFO [59ae22f4] Finished in 1.045 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/jaybee/git-ssh.sh 0.0%
+  INFO Uploading /tmp/jaybee/git-ssh.sh 100.0%
+  INFO [52fd089f] Running /usr/bin/env chmod +rx /tmp/jaybee/git-ssh.sh as ubuntu@52.197.20.14
+ DEBUG [52fd089f] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod +rx /tmp/jaybee/git-ssh.sh )
+  INFO [52fd089f] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [9cb986fd] Running /usr/bin/env git ls-remote --heads git@github.com:phileiny/Jaybee.git as ubuntu@52.197.20.14
+ DEBUG [9cb986fd] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git ls-remote --heads git@github.com:phileiny/Jaybee.git )
+ DEBUG [9cb986fd] 	f55ea4690db914019810b2105f5b5883725b4c3e
+ DEBUG [9cb986fd] 		
+ DEBUG [9cb986fd] 	refs/heads/master
+ DEBUG [9cb986fd] 	
+  INFO [9cb986fd] Finished in 2.605 seconds with exit status 0 (successful).
+  INFO [a1aceddc] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared /home/ubuntu/Jaybee/releases as ubuntu@52.197.20.14
+ DEBUG [a1aceddc] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared /home/ubuntu/Jaybee/releases )
+  INFO [a1aceddc] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [21950e73] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/shared/public/assets as ubuntu@52.197.20.14
+ DEBUG [21950e73] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/shared/public/assets )
+  INFO [21950e73] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [81be50af] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/config as ubuntu@52.197.20.14
+ DEBUG [81be50af] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /home/ubuntu/Jaybee/shared/config )
+  INFO [81be50af] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [39b2117f] Running [ -f /home/ubuntu/Jaybee/shared/config/database.yml ] as ubuntu@52.197.20.14
+ DEBUG [39b2117f] Command: [ -f /home/ubuntu/Jaybee/shared/config/database.yml ]
+ DEBUG [39b2117f] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [06b3c83a] Running [ -f /home/ubuntu/Jaybee/shared/config/application.yml ] as ubuntu@52.197.20.14
+ DEBUG [06b3c83a] Command: [ -f /home/ubuntu/Jaybee/shared/config/application.yml ]
+ DEBUG [06b3c83a] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [1e2f8c2b] Running [ -f /home/ubuntu/Jaybee/shared/puma.rb ] as ubuntu@52.197.20.14
+ DEBUG [1e2f8c2b] Command: [ -f /home/ubuntu/Jaybee/shared/puma.rb ]
+ DEBUG [1e2f8c2b] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [d7c2a4be] Running [ -f /home/ubuntu/Jaybee/current/REVISION ] as ubuntu@52.197.20.14
+ DEBUG [d7c2a4be] Command: [ -f /home/ubuntu/Jaybee/current/REVISION ]
+ DEBUG [d7c2a4be] Finished in 0.145 seconds with exit status 1 (failed).
+ DEBUG [03d1783e] Running [ -f /home/ubuntu/Jaybee/repo/HEAD ] as ubuntu@52.197.20.14
+ DEBUG [03d1783e] Command: [ -f /home/ubuntu/Jaybee/repo/HEAD ]
+ DEBUG [03d1783e] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ubuntu/Jaybee/repo
+ DEBUG [23c66d29] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [23c66d29] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [23c66d29] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [ae635f66] Running /usr/bin/env git remote update --prune as ubuntu@52.197.20.14
+ DEBUG [ae635f66] Command: cd /home/ubuntu/Jaybee/repo && ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ae635f66] 	Fetching origin
+ DEBUG [ae635f66] 	
+ DEBUG [ae635f66] 	remote: Counting objects: 9, done.[K
+ DEBUG [ae635f66] 	
+ DEBUG [ae635f66] 	remote: Compressing objects:  50% (1/2)   [K
+ DEBUG [ae635f66] 	remote: Compressing objects: 100% (2/2)   [K
+ DEBUG [ae635f66] 	remote: Compressing objects: 100% (2/2), done.[K
+ DEBUG [ae635f66] 	
+ DEBUG [ae635f66] 	remote: Total 9 (delta 7), reused 9 (delta 7), pack-reused 0[K
+ DEBUG [ae635f66] 	
+ DEBUG [ae635f66] 	Unpacking objects:  11% (1/9)   
+ DEBUG [ae635f66] 	Unpacking objects:  22% (2/9)   
+ DEBUG [ae635f66] 	Unpacking objects:  33% (3/9)   
+ DEBUG [ae635f66] 	Unpacking objects:  44% (4/9)   
+ DEBUG [ae635f66] 	Unpacking objects:  55% (5/9)   
+ DEBUG [ae635f66] 	Unpacking objects:  66% (6/9)   
+ DEBUG [ae635f66] 	Unpacking objects:  77% (7/9)   
+ DEBUG [ae635f66] 	Unpacking objects:  88% (8/9)   
+ DEBUG [ae635f66] 	Unpacking objects: 100% (9/9)   
+ DEBUG [ae635f66] 	Unpacking objects: 100% (9/9), done.
+ DEBUG [ae635f66] 	
+ DEBUG [ae635f66] 	From github.com:phileiny/Jaybee
+ DEBUG [ae635f66] 	
+ DEBUG [ae635f66] 	   4a45d22..f55ea46  master     -> master
+ DEBUG [ae635f66] 	
+  INFO [ae635f66] Finished in 3.048 seconds with exit status 0 (successful).
+ DEBUG [a603f8cf] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [a603f8cf] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [a603f8cf] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [72e1ddf1] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712033526 as ubuntu@52.197.20.14
+ DEBUG [72e1ddf1] Command: cd /home/ubuntu/Jaybee/repo && ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712033526 )
+  INFO [72e1ddf1] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [18d62b1a] Running /usr/bin/env git archive master | tar -x -f - -C /home/ubuntu/Jaybee/releases/20160712033526 as ubuntu@52.197.20.14
+ DEBUG [18d62b1a] Command: cd /home/ubuntu/Jaybee/repo && ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/ubuntu/Jaybee/releases/20160712033526 )
+  INFO [18d62b1a] Finished in 0.676 seconds with exit status 0 (successful).
+ DEBUG [d4f4d486] Running if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [d4f4d486] Command: if test ! -d /home/ubuntu/Jaybee/repo; then echo "Directory does not exist '/home/ubuntu/Jaybee/repo'" 1>&2; false; fi
+ DEBUG [d4f4d486] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [6c742f36] Running /usr/bin/env git rev-list --max-count=1 master as ubuntu@52.197.20.14
+ DEBUG [6c742f36] Command: cd /home/ubuntu/Jaybee/repo && ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/jaybee/git-ssh.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [6c742f36] 	f55ea4690db914019810b2105f5b5883725b4c3e
+ DEBUG [6c742f36] 	
+ DEBUG [6c742f36] Finished in 0.152 seconds with exit status 0 (successful).
+ DEBUG [6827edcb] Running if test ! -d /home/ubuntu/Jaybee/releases/20160712033526; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712033526'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [6827edcb] Command: if test ! -d /home/ubuntu/Jaybee/releases/20160712033526; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712033526'" 1>&2; false; fi
+ DEBUG [6827edcb] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [b626903b] Running /usr/bin/env echo "f55ea4690db914019810b2105f5b5883725b4c3e" >> REVISION as ubuntu@52.197.20.14
+ DEBUG [b626903b] Command: cd /home/ubuntu/Jaybee/releases/20160712033526 && ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env echo "f55ea4690db914019810b2105f5b5883725b4c3e" >> REVISION )
+  INFO [b626903b] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [eed82127] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712033526/config as ubuntu@52.197.20.14
+ DEBUG [eed82127] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712033526/config )
+  INFO [eed82127] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [10f0ce2a] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/config/database.yml ] as ubuntu@52.197.20.14
+ DEBUG [10f0ce2a] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/config/database.yml ]
+ DEBUG [10f0ce2a] Finished in 0.145 seconds with exit status 1 (failed).
+ DEBUG [78b9dc9e] Running [ -f /home/ubuntu/Jaybee/releases/20160712033526/config/database.yml ] as ubuntu@52.197.20.14
+ DEBUG [78b9dc9e] Command: [ -f /home/ubuntu/Jaybee/releases/20160712033526/config/database.yml ]
+ DEBUG [78b9dc9e] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [d55aae66] Running /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712033526/config/database.yml as ubuntu@52.197.20.14
+ DEBUG [d55aae66] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712033526/config/database.yml )
+  INFO [d55aae66] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [0d3bd738] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/database.yml /home/ubuntu/Jaybee/releases/20160712033526/config/database.yml as ubuntu@52.197.20.14
+ DEBUG [0d3bd738] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/database.yml /home/ubuntu/Jaybee/releases/20160712033526/config/database.yml )
+  INFO [0d3bd738] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [6847386b] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/config/application.yml ] as ubuntu@52.197.20.14
+ DEBUG [6847386b] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/config/application.yml ]
+ DEBUG [6847386b] Finished in 0.145 seconds with exit status 1 (failed).
+ DEBUG [1cab02e3] Running [ -f /home/ubuntu/Jaybee/releases/20160712033526/config/application.yml ] as ubuntu@52.197.20.14
+ DEBUG [1cab02e3] Command: [ -f /home/ubuntu/Jaybee/releases/20160712033526/config/application.yml ]
+ DEBUG [1cab02e3] Finished in 0.147 seconds with exit status 0 (successful).
+  INFO [71ee6839] Running /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712033526/config/application.yml as ubuntu@52.197.20.14
+ DEBUG [71ee6839] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env rm /home/ubuntu/Jaybee/releases/20160712033526/config/application.yml )
+  INFO [71ee6839] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [9bfb753d] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/application.yml /home/ubuntu/Jaybee/releases/20160712033526/config/application.yml as ubuntu@52.197.20.14
+ DEBUG [9bfb753d] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/config/application.yml /home/ubuntu/Jaybee/releases/20160712033526/config/application.yml )
+  INFO [9bfb753d] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [20a87033] Running /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712033526 /home/ubuntu/Jaybee/releases/20160712033526/tmp /home/ubuntu/Jaybee/releases/20160712033526/vendor /home/ubuntu/Jaybee/releases/20160712033526/public as ubuntu@52.197.20.14
+ DEBUG [20a87033] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /home/ubuntu/Jaybee/releases/20160712033526 /home/ubuntu/Jaybee/releases/20160712033526/tmp /home/ubuntu/Jaybee/releases/20160712033526/vendor /home/ubuntu/Jaybee/releases/20160712033526/public )
+  INFO [20a87033] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [c5d32196] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/bin ] as ubuntu@52.197.20.14
+ DEBUG [c5d32196] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/bin ]
+ DEBUG [c5d32196] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [63225397] Running [ -d /home/ubuntu/Jaybee/releases/20160712033526/bin ] as ubuntu@52.197.20.14
+ DEBUG [63225397] Command: [ -d /home/ubuntu/Jaybee/releases/20160712033526/bin ]
+ DEBUG [63225397] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [0045f01a] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712033526/bin as ubuntu@52.197.20.14
+ DEBUG [0045f01a] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712033526/bin )
+  INFO [0045f01a] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [36a43ea4] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/releases/20160712033526/bin as ubuntu@52.197.20.14
+ DEBUG [36a43ea4] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/bin /home/ubuntu/Jaybee/releases/20160712033526/bin )
+  INFO [36a43ea4] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [e4299eab] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/log ] as ubuntu@52.197.20.14
+ DEBUG [e4299eab] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/log ]
+ DEBUG [e4299eab] Finished in 0.145 seconds with exit status 1 (failed).
+ DEBUG [2dccf8c9] Running [ -d /home/ubuntu/Jaybee/releases/20160712033526/log ] as ubuntu@52.197.20.14
+ DEBUG [2dccf8c9] Command: [ -d /home/ubuntu/Jaybee/releases/20160712033526/log ]
+ DEBUG [2dccf8c9] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [129d779b] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712033526/log as ubuntu@52.197.20.14
+ DEBUG [129d779b] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712033526/log )
+  INFO [129d779b] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [6ddabd48] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/releases/20160712033526/log as ubuntu@52.197.20.14
+ DEBUG [6ddabd48] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/log /home/ubuntu/Jaybee/releases/20160712033526/log )
+  INFO [6ddabd48] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [ef671593] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/tmp/pids ] as ubuntu@52.197.20.14
+ DEBUG [ef671593] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/tmp/pids ]
+ DEBUG [ef671593] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [ce30d9e5] Running [ -d /home/ubuntu/Jaybee/releases/20160712033526/tmp/pids ] as ubuntu@52.197.20.14
+ DEBUG [ce30d9e5] Command: [ -d /home/ubuntu/Jaybee/releases/20160712033526/tmp/pids ]
+ DEBUG [ce30d9e5] Finished in 0.144 seconds with exit status 1 (failed).
+  INFO [0c55211d] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/releases/20160712033526/tmp/pids as ubuntu@52.197.20.14
+ DEBUG [0c55211d] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/pids /home/ubuntu/Jaybee/releases/20160712033526/tmp/pids )
+  INFO [0c55211d] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [474730c1] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/tmp/cache ] as ubuntu@52.197.20.14
+ DEBUG [474730c1] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/tmp/cache ]
+ DEBUG [474730c1] Finished in 0.145 seconds with exit status 1 (failed).
+ DEBUG [daf59165] Running [ -d /home/ubuntu/Jaybee/releases/20160712033526/tmp/cache ] as ubuntu@52.197.20.14
+ DEBUG [daf59165] Command: [ -d /home/ubuntu/Jaybee/releases/20160712033526/tmp/cache ]
+ DEBUG [daf59165] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [5f488d18] Running /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712033526/tmp/cache as ubuntu@52.197.20.14
+ DEBUG [5f488d18] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env rm -rf /home/ubuntu/Jaybee/releases/20160712033526/tmp/cache )
+  INFO [5f488d18] Finished in 0.239 seconds with exit status 0 (successful).
+  INFO [13b2bd1b] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/releases/20160712033526/tmp/cache as ubuntu@52.197.20.14
+ DEBUG [13b2bd1b] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/cache /home/ubuntu/Jaybee/releases/20160712033526/tmp/cache )
+  INFO [13b2bd1b] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [dd566390] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/tmp/sockets ] as ubuntu@52.197.20.14
+ DEBUG [dd566390] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/tmp/sockets ]
+ DEBUG [dd566390] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [185d15b8] Running [ -d /home/ubuntu/Jaybee/releases/20160712033526/tmp/sockets ] as ubuntu@52.197.20.14
+ DEBUG [185d15b8] Command: [ -d /home/ubuntu/Jaybee/releases/20160712033526/tmp/sockets ]
+ DEBUG [185d15b8] Finished in 0.145 seconds with exit status 1 (failed).
+  INFO [5de89dd2] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/releases/20160712033526/tmp/sockets as ubuntu@52.197.20.14
+ DEBUG [5de89dd2] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/tmp/sockets /home/ubuntu/Jaybee/releases/20160712033526/tmp/sockets )
+  INFO [5de89dd2] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [23eb18d3] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/vendor/bundle ] as ubuntu@52.197.20.14
+ DEBUG [23eb18d3] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/vendor/bundle ]
+ DEBUG [23eb18d3] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [3897361b] Running [ -d /home/ubuntu/Jaybee/releases/20160712033526/vendor/bundle ] as ubuntu@52.197.20.14
+ DEBUG [3897361b] Command: [ -d /home/ubuntu/Jaybee/releases/20160712033526/vendor/bundle ]
+ DEBUG [3897361b] Finished in 0.145 seconds with exit status 1 (failed).
+  INFO [5915e80e] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/releases/20160712033526/vendor/bundle as ubuntu@52.197.20.14
+ DEBUG [5915e80e] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/vendor/bundle /home/ubuntu/Jaybee/releases/20160712033526/vendor/bundle )
+  INFO [5915e80e] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [b6c751fc] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/public/system ] as ubuntu@52.197.20.14
+ DEBUG [b6c751fc] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/public/system ]
+ DEBUG [b6c751fc] Finished in 0.149 seconds with exit status 1 (failed).
+ DEBUG [ea930430] Running [ -d /home/ubuntu/Jaybee/releases/20160712033526/public/system ] as ubuntu@52.197.20.14
+ DEBUG [ea930430] Command: [ -d /home/ubuntu/Jaybee/releases/20160712033526/public/system ]
+ DEBUG [ea930430] Finished in 0.144 seconds with exit status 1 (failed).
+  INFO [4d22ece4] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/releases/20160712033526/public/system as ubuntu@52.197.20.14
+ DEBUG [4d22ece4] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/system /home/ubuntu/Jaybee/releases/20160712033526/public/system )
+  INFO [4d22ece4] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [a9aad77b] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/public/uploads ] as ubuntu@52.197.20.14
+ DEBUG [a9aad77b] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/public/uploads ]
+ DEBUG [a9aad77b] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [83b5a35f] Running [ -d /home/ubuntu/Jaybee/releases/20160712033526/public/uploads ] as ubuntu@52.197.20.14
+ DEBUG [83b5a35f] Command: [ -d /home/ubuntu/Jaybee/releases/20160712033526/public/uploads ]
+ DEBUG [83b5a35f] Finished in 0.143 seconds with exit status 1 (failed).
+  INFO [cfe29424] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/releases/20160712033526/public/uploads as ubuntu@52.197.20.14
+ DEBUG [cfe29424] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/uploads /home/ubuntu/Jaybee/releases/20160712033526/public/uploads )
+  INFO [cfe29424] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [91944fc5] Running [ -L /home/ubuntu/Jaybee/releases/20160712033526/public/assets ] as ubuntu@52.197.20.14
+ DEBUG [91944fc5] Command: [ -L /home/ubuntu/Jaybee/releases/20160712033526/public/assets ]
+ DEBUG [91944fc5] Finished in 0.144 seconds with exit status 1 (failed).
+ DEBUG [6d0a4f2d] Running [ -d /home/ubuntu/Jaybee/releases/20160712033526/public/assets ] as ubuntu@52.197.20.14
+ DEBUG [6d0a4f2d] Command: [ -d /home/ubuntu/Jaybee/releases/20160712033526/public/assets ]
+ DEBUG [6d0a4f2d] Finished in 0.145 seconds with exit status 1 (failed).
+  INFO [ed69753f] Running /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/assets /home/ubuntu/Jaybee/releases/20160712033526/public/assets as ubuntu@52.197.20.14
+ DEBUG [ed69753f] Command: ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /home/ubuntu/Jaybee/shared/public/assets /home/ubuntu/Jaybee/releases/20160712033526/public/assets )
+  INFO [ed69753f] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [ee003f83] Running if test ! -d /home/ubuntu/Jaybee/releases/20160712033526; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712033526'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [ee003f83] Command: if test ! -d /home/ubuntu/Jaybee/releases/20160712033526; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712033526'" 1>&2; false; fi
+ DEBUG [ee003f83] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [3ba15111] Running RBENV_ROOT=/home/ubuntu/.rbenv RBENV_VERSION=2.3.1 /home/ubuntu/.rbenv/bin/rbenv exec bundle install --path /home/ubuntu/Jaybee/shared/bundle --without development test --deployment --quiet as ubuntu@52.197.20.14
+ DEBUG [3ba15111] Command: cd /home/ubuntu/Jaybee/releases/20160712033526 && ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" ; RBENV_ROOT=/home/ubuntu/.rbenv RBENV_VERSION=2.3.1 /home/ubuntu/.rbenv/bin/rbenv exec bundle install --path /home/ubuntu/Jaybee/shared/bundle --without development test --deployment --quiet )
+  INFO [3ba15111] Finished in 0.757 seconds with exit status 0 (successful).
+ DEBUG [6c433c74] Running if test ! -d /home/ubuntu/Jaybee/releases/20160712033526; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712033526'" 1>&2; false; fi as ubuntu@52.197.20.14
+ DEBUG [6c433c74] Command: if test ! -d /home/ubuntu/Jaybee/releases/20160712033526; then echo "Directory does not exist '/home/ubuntu/Jaybee/releases/20160712033526'" 1>&2; false; fi
+ DEBUG [6c433c74] Finished in 0.145 seconds with exit status 0 (successful).
+  INFO [4397a0bb] Running RBENV_ROOT=/home/ubuntu/.rbenv RBENV_VERSION=2.3.1 /home/ubuntu/.rbenv/bin/rbenv exec bundle exec rake bower:install CI=true as ubuntu@52.197.20.14
+ DEBUG [4397a0bb] Command: cd /home/ubuntu/Jaybee/releases/20160712033526 && ( export RBENV_ROOT="/home/ubuntu/.rbenv" RBENV_VERSION="2.3.1" RAILS_ENV="production" ; RBENV_ROOT=/home/ubuntu/.rbenv RBENV_VERSION=2.3.1 /home/ubuntu/.rbenv/bin/rbenv exec bundle exec rake bower:install CI=true )
+ DEBUG [4397a0bb] 	rake aborted!
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	NoMethodError: undefined method `reject' for #<String:0x007fed40ecbe10>
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/figaro-1.1.1/lib/figaro/application.rb:64:in `global_configuration'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/figaro-1.1.1/lib/figaro/application.rb:32:in `configuration'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/figaro-1.1.1/lib/figaro/application.rb:42:in `each'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/figaro-1.1.1/lib/figaro/application.rb:36:in `load'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/figaro-1.1.1/lib/figaro.rb:23:in `load'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/figaro-1.1.1/lib/figaro/rails/railtie.rb:5:in `block in <class:Railtie>'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/lazy_load_hooks.rb:36:in `execute_hook'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/lazy_load_hooks.rb:44:in `each'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/activesupport-4.2.6/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:148:in `run_load_hooks!'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/application.rb:96:in `instance'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/railties-4.2.6/lib/rails/railtie.rb:123:in `config'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/releases/20160712033526/config/application.rb:16:in `<class:Application>'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/releases/20160712033526/config/application.rb:9:in `<module:Jaybee>'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/releases/20160712033526/config/application.rb:8:in `<top (required)>'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/releases/20160712033526/Rakefile:4:in `require'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/releases/20160712033526/Rakefile:4:in `<top (required)>'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/Jaybee/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/.rbenv/versions/2.3.1/bin/bund
+ DEBUG [4397a0bb] 	le:23:in `load'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	/home/ubuntu/.rbenv/versions/2.3.1/bin/bundle:23:in `<main>'
+ DEBUG [4397a0bb] 	
+ DEBUG [4397a0bb] 	(See full trace by running task with --trace)
+ DEBUG [4397a0bb] 	
